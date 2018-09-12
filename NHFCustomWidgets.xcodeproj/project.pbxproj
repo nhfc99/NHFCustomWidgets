@@ -79,7 +79,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8959269421490EE90088FD94 /* UIButton+NHFBlock */,
+				8981B099214939B200D1E0A3 /* UIButton */,
 				8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */,
 			);
 			path = Classes;
@@ -92,6 +92,14 @@
 				8959269721490F200088FD94 /* UIButton+NHFBlock.m */,
 			);
 			path = "UIButton+NHFBlock";
+			sourceTree = "<group>";
+		};
+		8981B099214939B200D1E0A3 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				8959269421490EE90088FD94 /* UIButton+NHFBlock */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

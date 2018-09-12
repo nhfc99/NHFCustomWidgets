@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NHFCustomWidgetsSetting.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(0, 0, 200.f, 200.f);
+    button.center = self.view.center;
+    [button handleControlEvent:UIControlEventTouchUpInside withBlock:^{
+        NSLog(@"%s", __FUNCTION__);
+    }];
+    [self.view addSubview:button];
 }
 
 
