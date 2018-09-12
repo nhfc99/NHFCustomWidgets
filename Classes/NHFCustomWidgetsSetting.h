@@ -9,6 +9,6 @@
 #ifndef NHFCustomWidgetsSetting_h
 #define NHFCustomWidgetsSetting_h
 
-#import "UIButtonNHFBlock.h"
+#import "UIButton+NHFBlock.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
