@@ -10,10 +10,11 @@
 
 typedef void (^NHFActionBlock)(void);
 
-@interface UIButton (NHFBlock)
+//@interface UIButton (NHFBlock)
+@interface UIButtonNHFBlock
 
-@property (readonly) NSMutableDictionary *event;
-
-- (void)handleControlEvent:(UIControlEvents)controlEvent withBlock:(NHFActionBlock)action;
+//@property (readonly) NSMutableDictionary *event;
+//
+//- (void)handleControlEvent:(UIControlEvents)controlEvent withBlock:(NHFActionBlock)action;
 
 @end

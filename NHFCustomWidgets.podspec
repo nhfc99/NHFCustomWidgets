@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
     s.frameworks = 'QuartzCore','CoreData','Foundation','UIKit'
     s.subspec 'UIButton+NHFBlock' do |ss|
-        ss.source_files = 'Classes/UIButton+NHFBlock/(UIButton+NHFBlock).{h,m}'
-        ss.public_header_files = 'Classes/UIButton+NHFBlock/(UIButton+NHFBlock).h'
+        ss.source_files = 'Classes/UIButtonNHFBlock/UIButtonNHFBlock.{h,m}'
+        ss.public_header_files = 'Classes/UIButtonNHFBlock/UIButtonNHFBlock.h'
     end
 end
