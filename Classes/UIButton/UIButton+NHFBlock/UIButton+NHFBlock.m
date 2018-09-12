@@ -11,16 +11,18 @@
 
 @implementation UIButton (NHFBlock)
 
-static const char *actionBlockKey = "actionBlockKey";
+char const *actionBlockKey = "actionBlockKey";
 
 @dynamic event;
 
-- (void)handleControlEvent:(UIControlEvents)controlEvent withBlock:(NHFActionBlock)action {
+- (void)handleControlEvent:(UIControlEvents)event
+                 withBlock:(NHFActionBlock)action
+                    target:(id)target {
     objc_setAssociatedObject(self, actionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addTarget:self action:@selector(callActionBlock:) forControlEvents:controlEvent];
+    [self addTarget:self action:@selector(actionBlock:) forControlEvents:event];
 }
 
-- (void)callActionBlock:(id)sender {
+- (void)actionBlock:(id)sender {
     NHFActionBlock block = (NHFActionBlock)objc_getAssociatedObject(self, actionBlockKey);
     if (block) {
         block();

@@ -14,6 +14,8 @@ typedef void (^NHFActionBlock)(void);
 
 @property (readonly) NSMutableDictionary *event;
 
-- (void)handleControlEvent:(UIControlEvents)controlEvent withBlock:(NHFActionBlock)action;
+- (void)handleControlEvent:(UIControlEvents)event
+                 withBlock:(NHFActionBlock)action
+                    target:(id)target;
 
 @end
