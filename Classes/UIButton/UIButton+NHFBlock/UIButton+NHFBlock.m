@@ -16,8 +16,7 @@ char const *actionBlockKey = "actionBlockKey";
 @dynamic event;
 
 - (void)handleControlEvent:(UIControlEvents)event
-                 withBlock:(NHFActionBlock)action
-                    target:(id)target {
+                 withBlock:(NHFActionBlock)action {
     objc_setAssociatedObject(self, actionBlockKey, action, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self addTarget:self action:@selector(actionBlock:) forControlEvents:event];
 }
