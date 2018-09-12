@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^NHFActionBlock)();
+typedef void (^NHFActionBlock)(void);
 
 @interface UIButton (NHFBlock)
 
