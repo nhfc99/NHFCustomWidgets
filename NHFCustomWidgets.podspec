@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.source_files = 'Classes/NHFCustomWidgetsSetting.h'
 
     s.frameworks = 'QuartzCore','CoreData','Foundation','UIKit'
-    s.subspec 'NHFCustomDispatchQueue' do |ss|
+    s.subspec 'NHFButton' do |ss|
         ss.source_files = 'Classes/NHFButton/UIButton+NHFBlock/UIButton+NHFBlock.{h,m}'
         ss.public_header_files = 'Classes/UIButton+NHFBlock/UIButton+NHFBlock.h'
     end
