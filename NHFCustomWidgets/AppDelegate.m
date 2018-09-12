@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NHFCustomWidgetsSetting.h"
 
 @interface AppDelegate ()
 

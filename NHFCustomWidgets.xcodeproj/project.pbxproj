@@ -29,7 +29,7 @@
 		8959268C21490ED80088FD94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8959269621490F200088FD94 /* UIButton+NHFBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+NHFBlock.h"; sourceTree = "<group>"; };
 		8959269721490F200088FD94 /* UIButton+NHFBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NHFBlock.m"; sourceTree = "<group>"; };
-		895926992149104F0088FD94 /* NHFCustomWidgetsSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFCustomWidgetsSetting.h; sourceTree = "<group>"; };
+		8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFCustomWidgetsSetting.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8959269421490EE90088FD94 /* NHFButton */,
-				895926992149104F0088FD94 /* NHFCustomWidgetsSetting.h */,
+				8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
