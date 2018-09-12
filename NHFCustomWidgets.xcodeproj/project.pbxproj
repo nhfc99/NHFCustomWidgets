@@ -88,18 +88,10 @@
 		8959269421490EE90088FD94 /* NHFButton */ = {
 			isa = PBXGroup;
 			children = (
-				8959269521490EF50088FD94 /* UIButton+NHFBlock */,
-			);
-			path = NHFButton;
-			sourceTree = "<group>";
-		};
-		8959269521490EF50088FD94 /* UIButton+NHFBlock */ = {
-			isa = PBXGroup;
-			children = (
 				8959269621490F200088FD94 /* UIButton+NHFBlock.h */,
 				8959269721490F200088FD94 /* UIButton+NHFBlock.m */,
 			);
-			path = "UIButton+NHFBlock";
+			path = NHFButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
