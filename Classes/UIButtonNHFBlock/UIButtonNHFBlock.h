@@ -11,7 +11,7 @@
 typedef void (^NHFActionBlock)(void);
 
 //@interface UIButton (NHFBlock)
-@interface UIButtonNHFBlock
+@interface UIButtonNHFBlock : NSObject 
 
 //@property (readonly) NSMutableDictionary *event;
 //
