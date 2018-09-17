@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.0.5"
+    s.version      = "1.0.6"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -18,4 +18,20 @@ Pod::Spec.new do |s|
         ss.source_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.{h,m}'
         ss.public_header_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.h'
     end
+
+    s.dependency "SDWebImage"
+    s.dependency "NHFFontUnit"
+    s.dependency "NHFFileUtils"
+    s.dependency "NHFDevice"
+    s.dependency "NhfUIColorUnit"
+    s.dependency "NhfCacheDeal"
+    s.dependency "NHFUIImage"
+    s.dependency "NHFRadioButton"
+    s.dependency "NHFDateUtils"
+    s.dependency "NHFNumberUnit"
+    s.dependency "Masonry"
+    s.dependency "IQKeyboardManager"
+    s.dependency "NHFPay"
+    s.dependency "NHFNavigationBar"
+    s.dependency "NHFDispatchQueue"
 end
