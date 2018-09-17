@@ -11,6 +11,16 @@
 @interface NHFSearchView : UIView
 
 @property (nonatomic, strong) UIImageView *searchImageView;
+@property (nonatomic, strong) UILabel *searchTitleLabel;
+
+@property (nonatomic, assign) CGFloat marginY;
+@property (nonatomic, assign) CGFloat marginLeft;
+@property (nonatomic, assign) CGFloat searchImageViewTitleBoth;
+
 @property (nonatomic, strong) UILabel *textLabel;
+
+- (void)initParam;
+
+- (void)createUI:(CGRect)frame;
 
 @end

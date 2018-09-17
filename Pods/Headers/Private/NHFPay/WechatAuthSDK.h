@@ -1,1 +1,0 @@
-../../../NHFPay/NHFPay/Pay/WechatSDK/WechatAuthSDK.h

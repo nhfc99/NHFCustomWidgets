@@ -1,1 +1,0 @@
-../../../../NHFPay/NHFPay/Pay/aliPay/AlipaySDK.framework/Headers/AlipaySDK.h
