@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.0.7"
+    s.version      = "1.0.8"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -17,5 +17,10 @@ Pod::Spec.new do |s|
     s.subspec 'UIButton' do |ss|
         ss.source_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.{h,m}'
         ss.public_header_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.h'
+    end
+
+    s.subspec 'NHFSearchView' do |ss|
+        ss.source_files = 'Classes/NHFSearchView/NHFSearchView.{h,m}'
+        ss.public_header_files = 'Classes/NHFSearchView/NHFSearchView.h'
     end
 end
