@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'NHFSearchView' do |ss|
-        ss.source_files = 'Classes/NHFSearchView/NHFSearchView.{h,m}'
-        ss.public_header_files = 'Classes/NHFSearchView/NHFSearchView.h'
+        ss.source_files = 'Classes/SearchView/NHFSearchView.{h,m}'
+        ss.public_header_files = 'Classes/SearchView/NHFSearchView.h'
     end
 end
