@@ -10,5 +10,6 @@
 #define NHFCustomWidgetsSetting_h
 
 #import "UIButton+NHFBlock.h"
+#import <Masonry/Masonry.h>
 
 #endif /* NHFCustomWidgetsSetting_h */
