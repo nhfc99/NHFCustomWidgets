@@ -18,20 +18,4 @@ Pod::Spec.new do |s|
         ss.source_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.{h,m}'
         ss.public_header_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.h'
     end
-
-    s.dependency "SDWebImage"
-    s.dependency "NHFFontUnit"
-    s.dependency "NHFFileUtils"
-    s.dependency "NHFDevice"
-    s.dependency "NhfUIColorUnit"
-    s.dependency "NhfCacheDeal"
-    s.dependency "NHFUIImage"
-    s.dependency "NHFRadioButton"
-    s.dependency "NHFDateUtils"
-    s.dependency "NHFNumberUnit"
-    s.dependency "Masonry"
-    s.dependency "IQKeyboardManager"
-    s.dependency "NHFPay"
-    s.dependency "NHFNavigationBar"
-    s.dependency "NHFDispatchQueue"
 end
