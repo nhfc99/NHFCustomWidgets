@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
 		8959267F21490ED60088FD94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959267E21490ED60088FD94 /* AppDelegate.m */; };
 		8959268221490ED60088FD94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959268121490ED60088FD94 /* ViewController.m */; };
 		8959268521490ED60088FD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8959268321490ED60088FD94 /* Main.storyboard */; };
@@ -15,12 +16,12 @@
 		8959268D21490ED80088FD94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959268C21490ED80088FD94 /* main.m */; };
 		8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959269721490F200088FD94 /* UIButton+NHFBlock.m */; };
 		897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897EE7AB214F6CE9009003C7 /* NHFSearchView.m */; };
-		B08CDA48A6463AEF9EB357AC /* libPods-NHFCustomWidgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058680B22B663F52F1D296D0 /* libPods-NHFCustomWidgets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		058680B22B663F52F1D296D0 /* libPods-NHFCustomWidgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHFCustomWidgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		324968016FC006AB0CDDD28E /* Pods-NHFCustomWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.release.xcconfig"; sourceTree = "<group>"; };
+		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
+		894D4598215DB46D00AF32C4 /* NHFSynService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFSynService.m; sourceTree = "<group>"; };
 		8959267A21490ED60088FD94 /* NHFCustomWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHFCustomWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8959267D21490ED60088FD94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8959267E21490ED60088FD94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFCustomWidgetsSetting.h; sourceTree = "<group>"; };
 		897EE7AA214F6CE9009003C7 /* NHFSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFSearchView.h; sourceTree = "<group>"; };
 		897EE7AB214F6CE9009003C7 /* NHFSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFSearchView.m; sourceTree = "<group>"; };
-		AB465354F1DAC317BB7CB68A /* Pods-NHFCustomWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,20 +44,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08CDA48A6463AEF9EB357AC /* libPods-NHFCustomWidgets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6274855E88E1FEECB46826B2 /* Pods */ = {
+		894D4596215DB46D00AF32C4 /* NHFSynService */ = {
 			isa = PBXGroup;
 			children = (
-				AB465354F1DAC317BB7CB68A /* Pods-NHFCustomWidgets.debug.xcconfig */,
-				324968016FC006AB0CDDD28E /* Pods-NHFCustomWidgets.release.xcconfig */,
+				894D4597215DB46D00AF32C4 /* NHFSynService.h */,
+				894D4598215DB46D00AF32C4 /* NHFSynService.m */,
 			);
-			name = Pods;
+			path = NHFSynService;
 			sourceTree = "<group>";
 		};
 		8959267121490ED60088FD94 = {
@@ -66,7 +65,6 @@
 				8959269321490EDD0088FD94 /* Classes */,
 				8959267C21490ED60088FD94 /* NHFCustomWidgets */,
 				8959267B21490ED60088FD94 /* Products */,
-				6274855E88E1FEECB46826B2 /* Pods */,
 				A1788ADFBC1D24FE408A18FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +96,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				894D4596215DB46D00AF32C4 /* NHFSynService */,
 				897EE7A9214F6CC0009003C7 /* SearchView */,
 				8981B099214939B200D1E0A3 /* UIButton */,
 				8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */,
@@ -146,11 +145,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8959269021490ED80088FD94 /* Build configuration list for PBXNativeTarget "NHFCustomWidgets" */;
 			buildPhases = (
-				9D588F8D65F859F135B027FB /* [CP] Check Pods Manifest.lock */,
 				8959267621490ED60088FD94 /* Sources */,
 				8959267721490ED60088FD94 /* Frameworks */,
 				8959267821490ED60088FD94 /* Resources */,
-				FDE0E9E9C0B949F6B46E683F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,47 +203,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		9D588F8D65F859F135B027FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NHFCustomWidgets-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDE0E9E9C0B949F6B46E683F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/NHFPay/NHFPay/Pay/aliPay/AlipaySDK.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		8959267621490ED60088FD94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,6 +211,7 @@
 				897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */,
 				8959268221490ED60088FD94 /* ViewController.m in Sources */,
 				8959268D21490ED80088FD94 /* main.m in Sources */,
+				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
 			);
@@ -394,7 +351,6 @@
 		};
 		8959269121490ED80088FD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB465354F1DAC317BB7CB68A /* Pods-NHFCustomWidgets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,7 +368,6 @@
 		};
 		8959269221490ED80088FD94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 324968016FC006AB0CDDD28E /* Pods-NHFCustomWidgets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
