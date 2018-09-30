@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892B28CB2160AB840074708A /* NHFWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B28C92160AB840074708A /* NHFWindowView.m */; };
 		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
 		8959267F21490ED60088FD94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959267E21490ED60088FD94 /* AppDelegate.m */; };
 		8959268221490ED60088FD94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959268121490ED60088FD94 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		058680B22B663F52F1D296D0 /* libPods-NHFCustomWidgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHFCustomWidgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		892B28C92160AB840074708A /* NHFWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFWindowView.m; sourceTree = "<group>"; };
+		892B28CA2160AB840074708A /* NHFWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFWindowView.h; sourceTree = "<group>"; };
 		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
 		894D4598215DB46D00AF32C4 /* NHFSynService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFSynService.m; sourceTree = "<group>"; };
 		8959267A21490ED60088FD94 /* NHFCustomWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHFCustomWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		892B28C82160AB840074708A /* NHFWindowView */ = {
+			isa = PBXGroup;
+			children = (
+				892B28CA2160AB840074708A /* NHFWindowView.h */,
+				892B28C92160AB840074708A /* NHFWindowView.m */,
+			);
+			path = NHFWindowView;
+			sourceTree = "<group>";
+		};
 		894D4596215DB46D00AF32C4 /* NHFSynService */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				892B28C82160AB840074708A /* NHFWindowView */,
 				894D4596215DB46D00AF32C4 /* NHFSynService */,
 				897EE7A9214F6CC0009003C7 /* SearchView */,
 				8981B099214939B200D1E0A3 /* UIButton */,
@@ -211,6 +224,7 @@
 				897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */,
 				8959268221490ED60088FD94 /* ViewController.m in Sources */,
 				8959268D21490ED80088FD94 /* main.m in Sources */,
+				892B28CB2160AB840074708A /* NHFWindowView.m in Sources */,
 				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,

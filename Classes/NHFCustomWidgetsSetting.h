@@ -12,5 +12,6 @@
 #import "UIButton+NHFBlock.h"
 #import "NHFSearchView.h"
 #import "NHFSynService.h"
+#import "NHFWindowView.h"
 
 #endif /* NHFCustomWidgetsSetting_h */

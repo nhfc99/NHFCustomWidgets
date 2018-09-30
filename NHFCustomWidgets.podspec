@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.0.12"
+    s.version      = "1.0.14"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -27,5 +27,10 @@ Pod::Spec.new do |s|
     s.subspec 'NHFSynService' do |ss|
         ss.source_files = 'Classes/NHFSynService/NHFSynService.{h,m}'
         ss.public_header_files = 'Classes/NHFSynService/NHFSynService.h'
+    end
+
+    s.subspec 'NHFWindowView' do |ss|
+        ss.source_files = 'Classes/NHFWindowView/NHFWindowView.{h,m}'
+        ss.public_header_files = 'Classes/NHFWindowView/NHFWindowView.h'
     end
 end
