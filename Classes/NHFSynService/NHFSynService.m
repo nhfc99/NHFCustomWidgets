@@ -29,28 +29,55 @@
     return self;
 }
 
-- (void)addObject:(id)object {
+- (void)addObject:(id)object aSelector:(SEL)aSelector {
+    if (object == nil ||
+        aSelector == NULL) {
+        return;
+    }
     NHFWeakServiceObject *jhWeakObject = [NHFWeakServiceObject new];
     jhWeakObject.weakObject = object;
+    jhWeakObject.selString = NSStringFromSelector(aSelector);
     [_objects addObject:jhWeakObject];
+}
+
+- (void)removeObject:(id)object aSelector:(SEL)aSelector {
+    if (object == nil) {
+        return;
+    }
+    NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:_objects];
+    for (NHFWeakServiceObject *jhWeakObject in retainObjects) {
+        if (jhWeakObject.weakObject == object) {
+            if (aSelector == NULL) {
+                [self removeObject:jhWeakObject];
+            } else if ([jhWeakObject.selString isEqualToString:NSStringFromSelector(aSelector)]) {
+                [self removeObject:jhWeakObject];
+            }
+        }
+    }
 }
 
 - (void)updateObject {
     NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:_objects];
     for (NHFWeakServiceObject *jhWeakObject in retainObjects) {
         if (jhWeakObject.weakObject == nil) {
-            [_objects removeObject:jhWeakObject];
+            [self removeObject:jhWeakObject];
             continue;
         }
         NSObject *objc = jhWeakObject.weakObject;
-        if ([objc respondsToSelector:@selector(nhfUpdateInfo)]) {
-            [objc performSelector:@selector(nhfUpdateInfo)];
+        SEL sel = NSSelectorFromString(jhWeakObject.selString);
+        if ([objc respondsToSelector:sel]) {
+            SEL selector = NSSelectorFromString(jhWeakObject.selString);
+            IMP imp = [objc methodForSelector:selector];
+            void (*func)(id, SEL) = (void *)imp;
+            func(objc, selector);
         }
     }
 }
 
-- (void)nhfUpdateInfo {
-    
+- (void)removeObject:(NHFWeakServiceObject *)jhWeakObject {
+    @synchronized (self) {
+        [_objects removeObject:jhWeakObject];
+    }
 }
 
 @end

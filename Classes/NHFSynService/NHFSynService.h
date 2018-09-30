@@ -13,13 +13,34 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NHFWeakServiceObject : NSObject
 
 @property (nonatomic, weak) id weakObject;
+@property (nonatomic, copy) NSString *selString;
 
 @end
 
 @interface NHFSynService : NSObject
 
-- (void)addObject:(id)object;
 
+/**
+ 添加对象和方法
+
+ @param object 不可为空
+ @param aSelesctor  不可为空
+ */
+- (void)addObject:(id)object aSelector:(SEL)aSelesctor;
+
+
+/**
+ 删除
+
+ @param object 不可为空
+ @param aSelector 可以为空
+ */
+- (void)removeObject:(id)object aSelector:(SEL)aSelector;
+
+
+/**
+ 执行更新操作
+ */
 - (void)updateObject;
 
 @end
