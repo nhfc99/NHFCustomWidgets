@@ -16,6 +16,8 @@
 		8959268A21490ED80088FD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8959268821490ED80088FD94 /* LaunchScreen.storyboard */; };
 		8959268D21490ED80088FD94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959268C21490ED80088FD94 /* main.m */; };
 		8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959269721490F200088FD94 /* UIButton+NHFBlock.m */; };
+		897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 897CD0CB21731D440026E0DC /* NHFImageTableViewCell.m */; };
+		897CD0CF21731D440026E0DC /* NHFImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897CD0CC21731D440026E0DC /* NHFImageTableViewCell.xib */; };
 		897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897EE7AB214F6CE9009003C7 /* NHFSearchView.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,9 @@
 		8959269621490F200088FD94 /* UIButton+NHFBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+NHFBlock.h"; sourceTree = "<group>"; };
 		8959269721490F200088FD94 /* UIButton+NHFBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NHFBlock.m"; sourceTree = "<group>"; };
 		8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFCustomWidgetsSetting.h; sourceTree = "<group>"; };
+		897CD0CB21731D440026E0DC /* NHFImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFImageTableViewCell.m; sourceTree = "<group>"; };
+		897CD0CC21731D440026E0DC /* NHFImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NHFImageTableViewCell.xib; sourceTree = "<group>"; };
+		897CD0CD21731D440026E0DC /* NHFImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFImageTableViewCell.h; sourceTree = "<group>"; };
 		897EE7AA214F6CE9009003C7 /* NHFSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFSearchView.h; sourceTree = "<group>"; };
 		897EE7AB214F6CE9009003C7 /* NHFSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFSearchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +113,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				897CD0CA21731D440026E0DC /* NHFImageTableViewCell */,
 				892B28C82160AB840074708A /* NHFWindowView */,
 				894D4596215DB46D00AF32C4 /* NHFSynService */,
 				897EE7A9214F6CC0009003C7 /* SearchView */,
@@ -124,6 +130,16 @@
 				8959269721490F200088FD94 /* UIButton+NHFBlock.m */,
 			);
 			path = "UIButton+NHFBlock";
+			sourceTree = "<group>";
+		};
+		897CD0CA21731D440026E0DC /* NHFImageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				897CD0CD21731D440026E0DC /* NHFImageTableViewCell.h */,
+				897CD0CB21731D440026E0DC /* NHFImageTableViewCell.m */,
+				897CD0CC21731D440026E0DC /* NHFImageTableViewCell.xib */,
+			);
+			path = NHFImageTableViewCell;
 			sourceTree = "<group>";
 		};
 		897EE7A9214F6CC0009003C7 /* SearchView */ = {
@@ -211,6 +227,7 @@
 				8959268A21490ED80088FD94 /* LaunchScreen.storyboard in Resources */,
 				8959268721490ED80088FD94 /* Assets.xcassets in Resources */,
 				8959268521490ED60088FD94 /* Main.storyboard in Resources */,
+				897CD0CF21731D440026E0DC /* NHFImageTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +245,7 @@
 				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
+				897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

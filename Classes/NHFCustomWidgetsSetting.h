@@ -13,5 +13,6 @@
 #import "NHFSearchView.h"
 #import "NHFSynService.h"
 #import "NHFWindowView.h"
+#import "NHFImageTableViewCell.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
