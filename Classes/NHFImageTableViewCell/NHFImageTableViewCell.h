@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NHFImageTableViewCell : UITableViewCell
 
+//比例
+@property (assign, nonatomic) CGSize scalsize;
+
 @property (weak, nonatomic) IBOutlet UIImageView *goodImageView;
 
 @end

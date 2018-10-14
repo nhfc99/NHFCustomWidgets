@@ -22,7 +22,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="siF-Ve-q3R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="siF-Ve-q3R" secondAttribute="height" multiplier="1080:550" id="qc7-TF-qP5"/>
+                            <constraint firstAttribute="width" secondItem="siF-Ve-q3R" secondAttribute="height" multiplier="1080:550" priority="750" id="qc7-TF-qP5"/>
                         </constraints>
                     </imageView>
                 </subviews>

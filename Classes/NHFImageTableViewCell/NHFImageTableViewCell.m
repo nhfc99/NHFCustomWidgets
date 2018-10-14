@@ -13,6 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    CGFloat width = CGRectGetWidth(self.goodImageView.frame);
+    CGFloat height = width * self.scalsize.height/self.scalsize.width;
+    self.goodImageView.frame = CGRectMake(0, 0, width, height);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
