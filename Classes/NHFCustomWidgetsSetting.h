@@ -14,5 +14,6 @@
 #import "NHFSynService.h"
 #import "NHFWindowView.h"
 #import "NHFImageTableViewCell.h"
+#import "UITableViewCell+Custom.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
