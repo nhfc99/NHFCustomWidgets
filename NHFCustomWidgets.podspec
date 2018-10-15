@@ -38,4 +38,9 @@ Pod::Spec.new do |s|
         ss.source_files = 'Classes/NHFImageTableViewCell/NHFImageTableViewCell.{h,m}'
         ss.public_header_files = 'Classes/NHFImageTableViewCell/NHFImageTableViewCell.h'
     end
+
+    s.subspec 'UITableViewCell+Custom' do |ss|
+        ss.source_files = 'Classes/UITableViewCell+Custom/UITableViewCell+Custom.{h,m}'
+        ss.public_header_files = 'Classes/UITableViewCell+Custom/UITableViewCell+Custom.h'
+    end
 end
