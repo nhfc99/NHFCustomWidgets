@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		892B28CB2160AB840074708A /* NHFWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B28C92160AB840074708A /* NHFWindowView.m */; };
 		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
+		89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89569E672177332B00171F02 /* NHFELCycleVerticalView.m */; };
 		8959267F21490ED60088FD94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959267E21490ED60088FD94 /* AppDelegate.m */; };
 		8959268221490ED60088FD94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959268121490ED60088FD94 /* ViewController.m */; };
 		8959268521490ED60088FD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8959268321490ED60088FD94 /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 		892B28CA2160AB840074708A /* NHFWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFWindowView.h; sourceTree = "<group>"; };
 		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
 		894D4598215DB46D00AF32C4 /* NHFSynService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFSynService.m; sourceTree = "<group>"; };
+		89569E672177332B00171F02 /* NHFELCycleVerticalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFELCycleVerticalView.m; sourceTree = "<group>"; };
+		89569E682177332B00171F02 /* NHFELCycleVerticalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFELCycleVerticalView.h; sourceTree = "<group>"; };
 		8959267A21490ED60088FD94 /* NHFCustomWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHFCustomWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8959267D21490ED60088FD94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8959267E21490ED60088FD94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +82,15 @@
 			path = NHFSynService;
 			sourceTree = "<group>";
 		};
+		89569E662177332B00171F02 /* NHFELCycleVerticalView */ = {
+			isa = PBXGroup;
+			children = (
+				89569E672177332B00171F02 /* NHFELCycleVerticalView.m */,
+				89569E682177332B00171F02 /* NHFELCycleVerticalView.h */,
+			);
+			path = NHFELCycleVerticalView;
+			sourceTree = "<group>";
+		};
 		8959267121490ED60088FD94 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +128,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89569E662177332B00171F02 /* NHFELCycleVerticalView */,
 				8980F74421745A4700602720 /* UITableViewCell+Custom */,
 				897CD0CA21731D440026E0DC /* NHFImageTableViewCell */,
 				892B28C82160AB840074708A /* NHFWindowView */,
@@ -260,6 +273,7 @@
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
 				897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */,
 				8980F74A21745A8000602720 /* UITableViewCell+Custom.m in Sources */,
+				89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
