@@ -127,10 +127,13 @@
     }
 }
 
-- (void)setDataSource:(NSArray *)dataSource{
+- (void)setDataSource:(NSArray *)dataSource {
     [self stopAnimation];
     _dataSource = dataSource;
     _indexNow = 0;
+    if (_dataSource.count == 0) {
+        return;
+    }
     [self startAnimation];
 }
 
@@ -146,16 +149,16 @@
 - (void)executeAnimation{
     [self setViewInfo];
     [UIView animateWithDuration:_animationTime delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        if (_direction == ELCycleVerticalViewScrollDirectionDown) {
-            [self setBtmRectByView:_tmpMiddleView];
+        if (self->_direction == ELCycleVerticalViewScrollDirectionDown) {
+            [self setBtmRectByView:self->_tmpMiddleView];
         } else {
-            [self setTopRectByView:_tmpMiddleView];
+            [self setTopRectByView:self->_tmpMiddleView];
         }
         
-        if (_direction == ELCycleVerticalViewScrollDirectionDown) {
-            [self setMiddleRectByView:_tmpTopView];
+        if (self->_direction == ELCycleVerticalViewScrollDirectionDown) {
+            [self setMiddleRectByView:self->_tmpTopView];
         } else {
-            [self setMiddleRectByView:_tmpBtmView];
+            [self setMiddleRectByView:self->_tmpBtmView];
         }
         [self layoutIfNeeded];
     } completion:nil];
