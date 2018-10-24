@@ -137,9 +137,9 @@
     [self startAnimation];
 }
 
-- (void)startAnimation{
+- (void)startAnimation {
     [self setViewInfo];
-    if (_dataSource.count > 1) {
+    if (_dataSource.count > 0) {
         [self stopTimer];
         _timer = [NSTimer scheduledTimerWithTimeInterval:_showTime target:self selector:@selector(executeAnimation) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
@@ -176,7 +176,7 @@
         [self setBtmRectByView:_tmpMiddleView];
     }
     
-    _indexNow++;
+    _indexNow ++;
 }
 
 - (void)setViewInfo{
@@ -198,7 +198,7 @@
         }
     }
     [self setDataBy:_tmpMiddleView data:_dataSource[_indexNow%(_dataSource.count)]];
-    if(_dataSource.count > 1){
+    if(_dataSource.count > 0){
         if (_direction == ELCycleVerticalViewScrollDirectionDown) {
             [self setDataBy:_tmpTopView data:_dataSource[(_indexNow+1)%(_dataSource.count)]];
         } else {
