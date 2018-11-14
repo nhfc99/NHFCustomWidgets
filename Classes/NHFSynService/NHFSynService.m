@@ -74,6 +74,28 @@
     }
 }
 
+- (void)updateObjectBySel:(NSString *)selString {
+    NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:_objects];
+    for (NHFWeakServiceObject *jhWeakObject in retainObjects) {
+        if (jhWeakObject.weakObject == nil) {
+            [self removeObject:jhWeakObject];
+            continue;
+        }
+        
+        NSObject *objc = jhWeakObject.weakObject;
+        if (![jhWeakObject.selString isEqualToString:selString]) {
+            continue;
+        }
+        SEL sel = NSSelectorFromString(jhWeakObject.selString);
+        if ([objc respondsToSelector:sel]) {
+            SEL selector = NSSelectorFromString(jhWeakObject.selString);
+            IMP imp = [objc methodForSelector:selector];
+            void (*func)(id, SEL) = (void *)imp;
+            func(objc, selector);
+        }
+    }
+}
+
 - (void)removeObject:(NHFWeakServiceObject *)jhWeakObject {
     @synchronized (self) {
         [_objects removeObject:jhWeakObject];

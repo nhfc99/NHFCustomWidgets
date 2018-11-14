@@ -43,6 +43,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)updateObject;
 
+
+/**
+ 执行更新操作 - 指定的方法
+
+ @param selString
+ */
+- (void)updateObjectBySel:(NSString *)selString;
+
 @end
 
 NS_ASSUME_NONNULL_END
