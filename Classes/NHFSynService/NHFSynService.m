@@ -8,62 +8,7 @@
 
 #import "NHFSynService.h"
 
-static NHFSynServiceCache *_nhfSynServiceCache = nil;
-
-@interface NHFSynServiceCache ()
-
-@property (nonatomic, retain) NSMutableDictionary *cacheService;
-
-@end
-
-@implementation NHFSynServiceCache
-
-+ (instancetype)getInstancetype {
-    static dispatch_once_t predicate;
-    dispatch_once(&predicate, ^{
-        _nhfSynServiceCache = [NHFSynServiceCache new];
-    });
-    return _nhfSynServiceCache;
-}
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _cacheService = [NSMutableDictionary new];
-    }
-    return self;
-}
-
-//添加指定的对象
-- (void)addObject:(NHFSynService *)object keyString:(NSString *)keyString {
-    if (object == nil ||
-        keyString == nil) {
-        return;
-    }
-    //保存对象
-    NHFWeakServiceObject *jhWeakObject = [NHFWeakServiceObject new];
-    jhWeakObject.weakObject = object;
-    [_cacheService removeObjectForKey:keyString];
-    [_cacheService setObject:jhWeakObject forKey:keyString];
-}
-
-- (NHFSynService *)objectForKeyString:(NSString *)keyString {
-    //判断是否为空，如果为空了就清除
-    NHFWeakServiceObject *jhWeakObject = [_cacheService objectForKey:keyString];
-    if (jhWeakObject.weakObject) {
-        return jhWeakObject.weakObject;
-    }
-    [self removeKeyString:keyString];
-    return nil;
-}
-
-//移除指定的键名
-- (void)removeKeyString:(NSString *)keyString {
-    [_cacheService removeObjectForKey:keyString];
-}
-
-@end
+static NHFSynService *_nhfSynService = nil;
 
 @implementation NHFWeakServiceObject
 
@@ -71,101 +16,103 @@ static NHFSynServiceCache *_nhfSynServiceCache = nil;
 
 @interface NHFSynService ()
 
-@property (nonatomic, retain) NSMutableArray *objects;
+@property (nonatomic, retain) NSMutableDictionary *objectsMap;
 
 @end
 
 @implementation NHFSynService
 
++ (instancetype)getInstancetype {
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        _nhfSynService = [NHFSynService new];
+    });
+    return _nhfSynService;
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        _objects = [NSMutableArray new];
+        _objectsMap = [NSMutableDictionary new];
     }
     return self;
 }
 
-- (void)addObject:(id)object aSelector:(SEL)aSelector {
+- (void)addObject:(id)object 
+        aSelector:(SEL)aSelector
+             type:(NSString *)type {
     if (object == nil ||
-        aSelector == NULL) {
+        aSelector == nil ||
+        type == nil) {
         return;
     }
+    
+    //数据源
     NHFWeakServiceObject *jhWeakObject = [NHFWeakServiceObject new];
     jhWeakObject.weakObject = object;
     jhWeakObject.selString = NSStringFromSelector(aSelector);
-    [_objects addObject:jhWeakObject];
+    
+    NSMutableArray *objects = [NSMutableArray new];
+    NSArray *mapObjects = [_objectsMap objectForKey:type];
+    if (mapObjects == nil) {
+        [objects addObject:jhWeakObject];
+        [_objectsMap setObject:objects forKey:type];
+    } else {
+        [objects addObjectsFromArray:mapObjects];
+        //检查重复的数据
+        [objects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (obj.weakObject == jhWeakObject.weakObject &&
+                [obj.selString isEqualToString:jhWeakObject.selString]) {
+                [objects removeObjectAtIndex:idx];
+                *stop = true;
+            }
+        }];
+        [objects addObject:jhWeakObject];
+    }
 }
 
-- (void)removeObject:(id)object aSelector:(SEL)aSelector {
-    if (object == nil) {
-        return;
-    }
-    NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:_objects];
-    for (NHFWeakServiceObject *jhWeakObject in retainObjects) {
-        if (jhWeakObject.weakObject == object) {
-            if (aSelector == NULL) {
-                [self removeObject:jhWeakObject];
-            } else if ([jhWeakObject.selString isEqualToString:NSStringFromSelector(aSelector)]) {
-                [self removeObject:jhWeakObject];
+- (void)updateObject:(NSString *)type {
+    NSArray *mapObjects = [_objectsMap objectForKey:type];
+    NSMutableArray *retainObjects = [mapObjects mutableCopy];
+    [retainObjects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.weakObject == nil) {
+            [retainObjects removeObjectIdenticalTo:obj];
+        } else {
+            NSObject *objc = obj.weakObject;
+            SEL sel = NSSelectorFromString(obj.selString);
+            if ([objc respondsToSelector:sel]) {
+                SEL selector = NSSelectorFromString(obj.selString);
+                IMP imp = [objc methodForSelector:selector];
+                void (*func)(id, SEL) = (void *)imp;
+                func(objc, selector);
             }
         }
-    }
+    }];
+    [_objectsMap removeObjectForKey:type];
+    [_objectsMap setObject:retainObjects forKey:type];
 }
 
-- (void)updateObject {
-    NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:_objects];
-    for (NHFWeakServiceObject *jhWeakObject in retainObjects) {
-        if (jhWeakObject.weakObject == nil) {
-            [self removeObject:jhWeakObject];
-            continue;
+- (void)updateObject:(NSString *)type
+           selString:(NSString *)selString {
+    NSArray *mapObjects = [_objectsMap objectForKey:type];
+    NSMutableArray *retainObjects = [mapObjects mutableCopy];
+    [retainObjects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.weakObject == nil) {
+            [retainObjects removeObjectIdenticalTo:obj];
+        } else if ([obj.selString isEqualToString:selString]) {
+            NSObject *objc = obj.weakObject;
+            SEL sel = NSSelectorFromString(obj.selString);
+            if ([objc respondsToSelector:sel]) {
+                SEL selector = NSSelectorFromString(obj.selString);
+                IMP imp = [objc methodForSelector:selector];
+                void (*func)(id, SEL) = (void *)imp;
+                func(objc, selector);
+            }
         }
-        NSObject *objc = jhWeakObject.weakObject;
-        SEL sel = NSSelectorFromString(jhWeakObject.selString);
-        if ([objc respondsToSelector:sel]) {
-            SEL selector = NSSelectorFromString(jhWeakObject.selString);
-            IMP imp = [objc methodForSelector:selector];
-            void (*func)(id, SEL) = (void *)imp;
-            func(objc, selector);
-        }
-    }
-}
-
-- (void)updateObjectBySel:(NSString *)selString {
-    NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:_objects];
-    for (NHFWeakServiceObject *jhWeakObject in retainObjects) {
-        if (jhWeakObject.weakObject == nil) {
-            [self removeObject:jhWeakObject];
-            continue;
-        }
-        
-        NSObject *objc = jhWeakObject.weakObject;
-        if (![jhWeakObject.selString isEqualToString:selString]) {
-            continue;
-        }
-        SEL sel = NSSelectorFromString(jhWeakObject.selString);
-        if ([objc respondsToSelector:sel]) {
-            SEL selector = NSSelectorFromString(jhWeakObject.selString);
-            IMP imp = [objc methodForSelector:selector];
-            void (*func)(id, SEL) = (void *)imp;
-            func(objc, selector);
-        }
-    }
-}
-
-- (void)removeObject:(NHFWeakServiceObject *)jhWeakObject {
-    @synchronized (self) {
-        [_objects removeObject:jhWeakObject];
-    }
-}
-
-#pragma mark - 存储本对象，用于其他地方随时使用
-- (void)saveServiceKey:(NSString *)key {
-    [[NHFSynServiceCache getInstancetype] addObject:self keyString:key];
-}
-
-+ (NHFSynService *)serviceKey:(NSString *)key {
-    return [[NHFSynServiceCache getInstancetype] objectForKeyString:key];
+    }];
+    [_objectsMap removeObjectForKey:type];
+    [_objectsMap setObject:retainObjects forKey:type];
 }
 
 @end
