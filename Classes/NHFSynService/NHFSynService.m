@@ -39,7 +39,7 @@ static NHFSynService *_nhfSynService = nil;
     return self;
 }
 
-- (void)addObject:(id)object 
+- (void)addObject:(id)object
         aSelector:(SEL)aSelector
              type:(NSString *)type {
     if (object == nil ||
@@ -69,6 +69,7 @@ static NHFSynService *_nhfSynService = nil;
             }
         }];
         [objects addObject:jhWeakObject];
+        [_objectsMap setObject:objects forKey:type];
     }
 }
 
