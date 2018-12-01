@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (id)getTableViewCellTableView:(UITableView *)tableView
          tableViewCellClassName:(NSString *)tableViewCellClassName;
 
++ (id)getTableViewCellTableView:(UITableView *)tableView
+         tableViewCellClassName:(NSString *)tableViewCellClassName
+                reuseIdentifier:(NSString *)reuseIdentifier;
+
 @end
 
 NS_ASSUME_NONNULL_END

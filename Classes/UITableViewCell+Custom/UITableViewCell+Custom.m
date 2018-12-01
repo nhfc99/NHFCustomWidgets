@@ -21,4 +21,16 @@
     return cell;
 }
 
++ (id)getTableViewCellTableView:(UITableView *)tableView
+         tableViewCellClassName:(NSString *)tableViewCellClassName
+                reuseIdentifier:(NSString *)reuseIdentifier {
+    Class class = NSClassFromString(tableViewCellClassName);
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCellClassName];
+    if (!cell) {
+        cell = [[class alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
 @end
