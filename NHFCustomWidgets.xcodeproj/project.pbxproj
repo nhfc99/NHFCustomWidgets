@@ -52,6 +52,7 @@
 		897EE7AB214F6CE9009003C7 /* NHFSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFSearchView.m; sourceTree = "<group>"; };
 		8980F74821745A8000602720 /* UITableViewCell+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Custom.h"; sourceTree = "<group>"; };
 		8980F74921745A8000602720 /* UITableViewCell+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Custom.m"; sourceTree = "<group>"; };
+		89B655AA21E09C770079073E /* NHFMacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFMacroDefinition.h; sourceTree = "<group>"; };
 		A6CC9707AF637242A3EFD497 /* Pods-NHFCustomWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.release.xcconfig"; sourceTree = "<group>"; };
 		E098ACDD343B669D61E16754 /* Pods-NHFCustomWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +134,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89B655A921E09C770079073E /* NHFMacroDefinition */,
 				89569E662177332B00171F02 /* NHFELCycleVerticalView */,
 				8980F74421745A4700602720 /* UITableViewCell+Custom */,
 				897CD0CA21731D440026E0DC /* NHFImageTableViewCell */,
@@ -188,6 +190,14 @@
 				8959269421490EE90088FD94 /* UIButton+NHFBlock */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		89B655A921E09C770079073E /* NHFMacroDefinition */ = {
+			isa = PBXGroup;
+			children = (
+				89B655AA21E09C770079073E /* NHFMacroDefinition.h */,
+			);
+			path = NHFMacroDefinition;
 			sourceTree = "<group>";
 		};
 		A1788ADFBC1D24FE408A18FD /* Frameworks */ = {

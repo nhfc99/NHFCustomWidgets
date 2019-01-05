@@ -15,5 +15,6 @@
 #import "NHFWindowView.h"
 #import "NHFImageTableViewCell.h"
 #import "UITableViewCell+Custom.h"
+#import "NHFMacroDefinition.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
