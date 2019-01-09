@@ -13,14 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^TouchObject)(void);
 typedef void(^NHFWindowViewClose)(void);
 
-@interface NHFWindowView : UIView {
-    //全局弹出提示框
-    UIView *_bgView;
-    __weak id _theView;
-}
+@interface NHFWindowView : UIView
 
 @property (nonatomic, copy) TouchObject touch;
 @property (nonatomic, copy) NHFWindowViewClose nhfWindowViewClose;
+
+//基础视图
+@property (nonatomic, strong) UIView *bgView;
+@property (nonatomic, weak) id theView;
+@property (nonatomic, weak) UIWindow *window;
 
 + (instancetype)getInstancetype;
 

@@ -38,9 +38,9 @@ static NHFWindowView *object = nil;
     }
     _theView = view;
     _bgView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
-    [window addSubview:_bgView];
-    [window addSubview:view];
+    _window = [[[UIApplication sharedApplication] delegate] window];
+    [_window addSubview:_bgView];
+    [_window addSubview:view];
     
     //颜色
     if (color == nil) {
