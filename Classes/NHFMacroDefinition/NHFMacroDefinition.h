@@ -163,10 +163,4 @@ return shared##className;\
 
 /*=================我是分割线，上边是系统配置，下边是自定义配置================*/
 
-//App主调色
-#define MainAppColor kRGBA(16.f, 142.f, 233.f, 1)
-//常用色值
-#define kGray1 kRGBA(217.f, 217.f, 217.f, 1)
-
-
 #endif /* NHFMacroDefinition_h */
