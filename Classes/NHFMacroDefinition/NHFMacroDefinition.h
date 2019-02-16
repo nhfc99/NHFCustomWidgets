@@ -161,6 +161,9 @@ return shared##className;\
 //装换数据为字符串
 #define ToStringBy(headString, data) ([NSString stringWithFormat:headString, data])
 
+//载入默认视图
+#define kLoadNibNamed(viewName, object) ([[NSBundle mainBundle] loadNibNamed:viewNames owner:object options:0].lastObject)
+
 /*=================我是分割线，上边是系统配置，下边是自定义配置================*/
 
 #endif /* NHFMacroDefinition_h */
