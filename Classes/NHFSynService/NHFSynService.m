@@ -116,4 +116,27 @@ static NHFSynService *_nhfSynService = nil;
     [_objectsMap setObject:retainObjects forKey:type];
 }
 
+- (void)updateObject:(NSString *)type
+           selString:(NSString *)selString
+              object:(id)object {
+    NSArray *mapObjects = [_objectsMap objectForKey:type];
+    NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:mapObjects];
+    [retainObjects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.weakObject == nil) {
+            [retainObjects removeObjectIdenticalTo:obj];
+        } else if ([obj.selString isEqualToString:selString]) {
+            NSObject *objc = obj.weakObject;
+            SEL sel = NSSelectorFromString(obj.selString);
+            if ([objc respondsToSelector:sel]) {
+                SEL selector = NSSelectorFromString(obj.selString);
+                IMP imp = [objc methodForSelector:selector];
+                void (*func)(id, SEL, id object) = (void *)imp;
+                func(objc, selector, object);
+            }
+        }
+    }];
+    [_objectsMap removeObjectForKey:type];
+    [_objectsMap setObject:retainObjects forKey:type];
+}
+
 @end

@@ -25,10 +25,17 @@
     button.center = self.view.center;
     [button handleControlEvent:UIControlEventTouchUpInside withBlock:^{
         NSLog(@"%s", __FUNCTION__);
+//        [[NHFSynService getInstancetype] updateObject:@"ccc" selString:@"show:" object:@"dcccsfds"];
+        [[NHFSynService getInstancetype] updateObject:@"ccc"];
     }];
     [self.view addSubview:button];
+    
+    [[NHFSynService getInstancetype] addObject:self aSelector:@selector(show:) type:@"ccc"];
 }
 
+- (void)show:(NSString *)content {
+    NSLog(@"%s - content = %@", __FUNCTION__, content);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
