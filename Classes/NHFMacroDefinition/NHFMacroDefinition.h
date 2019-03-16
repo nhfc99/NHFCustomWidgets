@@ -167,5 +167,6 @@ return shared##className;\
 //回调类型
 typedef void(^kCallback)(void);
 typedef void(^kCallbackParam)(id param);
+typedef void(^kCallbackParams)(id param, ...);
 
 #endif /* NHFMacroDefinition_h */
