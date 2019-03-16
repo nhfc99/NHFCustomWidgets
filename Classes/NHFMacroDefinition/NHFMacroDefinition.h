@@ -164,6 +164,8 @@ return shared##className;\
 //载入默认视图
 #define kLoadNibNamed(viewName, object) ([[NSBundle mainBundle] loadNibNamed:viewName owner:object options:0].lastObject)
 
-/*=================我是分割线，上边是系统配置，下边是自定义配置================*/
+//回调类型
+typedef void(^kCallback)(void);
+typedef void(^kCallbackParam)(id param);
 
 #endif /* NHFMacroDefinition_h */
