@@ -169,4 +169,16 @@ typedef void(^kCallback)(void);
 typedef void(^kCallbackParam)(id param);
 typedef void(^kCallbackParams)(id param, ...);
 
+//接收数据
+#define kGetCallbackParams(array, param) \
+va_list argsList;\
+[array addObject:param];\
+va_start(argsList, param);\
+id arg;\
+while ((arg = va_arg(argsList, id)))\
+{\
+    [array addObject:arg];\
+}\
+va_end(argsList);
+
 #endif /* NHFMacroDefinition_h */
