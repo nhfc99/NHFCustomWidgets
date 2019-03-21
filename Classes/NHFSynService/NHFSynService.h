@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param selString --
  */
 - (void)updateObject:(NSString *)type
-           selString:(NSString *)selString;
+           selString:(NSString * _Nullable)selString;
 
 /**
  更新
@@ -63,8 +63,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param object --
  */
 - (void)updateObject:(NSString *)type
-           selString:(NSString *)selString
-              object:(id)object;
+           selString:(NSString * _Nullable)selString
+              object:(id _Nullable)object;
 
 @end
 

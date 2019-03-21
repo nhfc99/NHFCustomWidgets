@@ -79,69 +79,46 @@ static NHFSynService *_nhfSynService = nil;
 }
 
 - (void)updateObject:(NSString *)type {
-    @synchronized (self) {
-        NSArray *mapObjects = [_objectsMap objectForKey:type];
-        NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:mapObjects];
-        [retainObjects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (obj.weakObject == nil) {
-                [retainObjects removeObjectIdenticalTo:obj];
-            } else {
-                NSObject *objc = obj.weakObject;
-                SEL sel = NSSelectorFromString(obj.selString);
-                if ([objc respondsToSelector:sel]) {
-                    SEL selector = NSSelectorFromString(obj.selString);
-                    IMP imp = [objc methodForSelector:selector];
-                    void (*func)(id, SEL) = (void *)imp;
-                    func(objc, selector);
-                }
-            }
-        }];
-        [_objectsMap removeObjectForKey:type];
-        [_objectsMap setObject:retainObjects forKey:type];
-    }
+    [self updateObject:type selString:nil object:nil];
 }
 
 - (void)updateObject:(NSString *)type
            selString:(NSString *)selString {
-    @synchronized (self) {
-        NSArray *mapObjects = [_objectsMap objectForKey:type];
-        NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:mapObjects];
-        [retainObjects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (obj.weakObject == nil) {
-                [retainObjects removeObjectIdenticalTo:obj];
-            } else if ([obj.selString isEqualToString:selString]) {
-                NSObject *objc = obj.weakObject;
-                SEL sel = NSSelectorFromString(obj.selString);
-                if ([objc respondsToSelector:sel]) {
-                    SEL selector = NSSelectorFromString(obj.selString);
-                    IMP imp = [objc methodForSelector:selector];
-                    void (*func)(id, SEL) = (void *)imp;
-                    func(objc, selector);
-                }
-            }
-        }];
-        [_objectsMap removeObjectForKey:type];
-        [_objectsMap setObject:retainObjects forKey:type];
-    }
+    [self updateObject:type selString:selString object:nil];
 }
 
 - (void)updateObject:(NSString *)type
-           selString:(NSString *)selString
-              object:(id)object {
+           selString:(NSString * _Nullable)selString
+              object:(id _Nullable)object {
+    //类型不可以为空数据
+    if (!type) {
+        return;
+    }
     @synchronized (self) {
         NSArray *mapObjects = [_objectsMap objectForKey:type];
         NSMutableArray *retainObjects = [[NSMutableArray alloc] initWithArray:mapObjects];
         [retainObjects enumerateObjectsUsingBlock:^(NHFWeakServiceObject *obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (obj.weakObject == nil) {
                 [retainObjects removeObjectIdenticalTo:obj];
-            } else if ([obj.selString isEqualToString:selString]) {
+            } else if (!selString ||
+                       [obj.selString isEqualToString:selString]) {
+                //说明：如果没有传递方法，代表要执行此类别中所有注册过的方法，如果指定了方法\
+                       那么需要验证指定的方法，意味着只执行指定的某一个方法，\
+                       selString==nil表示要执行type类型下注册的所有的方法 \
+                       selString!=nil表示只执行type类型下注册的指定方法
                 NSObject *objc = obj.weakObject;
                 SEL sel = NSSelectorFromString(obj.selString);
                 if ([objc respondsToSelector:sel]) {
                     SEL selector = NSSelectorFromString(obj.selString);
                     IMP imp = [objc methodForSelector:selector];
-                    void (*func)(id, SEL, id object) = (void *)imp;
-                    func(objc, selector, object);
+                    
+                    if (object) {//有参数的时候
+                        void (*func)(id, SEL, id object) = (void *)imp;
+                        func(objc, selector, object);
+                    } else {//没有参数的时候
+                        void (*func)(id, SEL) = (void *)imp;
+                        func(objc, selector);
+                    }
                 }
             }
         }];
