@@ -62,8 +62,8 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'NHFCycleView' do |ss|
+        ss.dependency 'HWWeakTimer'
         ss.source_files = 'Classes/NHFCycleView/NHFCycleView.{h,m}'
         ss.public_header_files = 'Classes/NHFCycleView/NHFCycleView.h'
-        ss.preserve_paths = "Classes/HWWeakTimer"
     end
 end
