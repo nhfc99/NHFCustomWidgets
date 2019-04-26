@@ -64,7 +64,7 @@
 }
 
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
-                                      block:(HWTimerHandler)block
+                                      block:(NHFTimerHandler)block
                                    userInfo:(id)userInfo
                                     repeats:(BOOL)repeats {
     NSMutableArray *userInfoArray = [NSMutableArray arrayWithObject:[block copy]];
@@ -79,7 +79,7 @@
 }
 
 + (void)_timerBlockInvoke:(NSArray*)userInfo {
-    HWTimerHandler block = userInfo[0];
+    NHFTimerHandler block = userInfo[0];
     id info = nil;
     if (userInfo.count == 2) {
         info = userInfo[1];

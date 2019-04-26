@@ -22,7 +22,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^HWTimerHandler)(id userInfo);
+typedef void (^NHFTimerHandler)(id userInfo);
 
 @interface NHFWeakTimer : NSObject
 
@@ -33,7 +33,7 @@ typedef void (^HWTimerHandler)(id userInfo);
                                      repeats:(BOOL)repeats;
 
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
-                                      block:(HWTimerHandler)block
+                                      block:(NHFTimerHandler)block
                                    userInfo:(id)userInfo
                                     repeats:(BOOL)repeats;
 
