@@ -84,9 +84,20 @@
 }
 
 - (void)start {
+    NSMutableArray *list = [[NSMutableArray alloc] initWithArray:self.cycleParam.viewObjects];
     if (self.cycleParam.viewObjects.count == 0) {
         return;
     }
+    
+    if (self.cycleParam.viewObjects.count == 1) {
+        [list addObject:self.cycleParam.viewObjects.firstObject];
+        [list addObject:self.cycleParam.viewObjects.firstObject];
+    }
+    
+    if (self.cycleParam.viewObjects.count == 2) {
+        [list addObject:self.cycleParam.viewObjects.firstObject];
+    }
+    
     self.currentIndex = 0;
     self.animateDuration = self.cycleParam.animateDuration;
     self.interval = self.cycleParam.interval;
