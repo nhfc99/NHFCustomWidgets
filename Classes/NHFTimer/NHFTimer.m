@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "NHFWeakTimer.h"
+#import "NHFTimer.h"
 
 @interface NHFWeakTimerTarget : NSObject
 
@@ -45,7 +45,7 @@
 
 @end
 
-@implementation NHFWeakTimer
+@implementation NHFTimer
 
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                       target:(id)aTarget
