@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NHFCustomWidgetsSetting.h"
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, copy) kCallbackParams param;
-
 
 @end
 
