@@ -17,6 +17,6 @@
 #import "UITableViewCell+Custom.h"
 #import "NHFMacroDefinition.h"
 #import "NHFTimer.h"
-#import "NHFCycleView.h"
+//#import "NHFCycleView.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
