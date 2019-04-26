@@ -84,13 +84,13 @@
 			path = NHFCycleView;
 			sourceTree = "<group>";
 		};
-		8921E63622729F2900460D7C /* HWWeakTimer */ = {
+		8921E63622729F2900460D7C /* NHFWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
 				8921E63722729F2900460D7C /* NHFWeakTimer.m */,
 				8921E63822729F2900460D7C /* NHFWeakTimer.h */,
 			);
-			path = HWWeakTimer;
+			path = NHFWeakTimer;
 			sourceTree = "<group>";
 		};
 		892B28C82160AB840074708A /* NHFWindowView */ = {
@@ -158,7 +158,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8921E63622729F2900460D7C /* HWWeakTimer */,
+				8921E63622729F2900460D7C /* NHFWeakTimer */,
 				8921E63322729F2900460D7C /* NHFCycleView */,
 				89B655A921E09C770079073E /* NHFMacroDefinition */,
 				89569E662177332B00171F02 /* NHFELCycleVerticalView */,
