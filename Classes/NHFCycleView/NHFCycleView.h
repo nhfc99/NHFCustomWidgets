@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat animateDuration;
 @property (nonatomic, assign) CGFloat interval;
-@property (nonatomic, weak) NSArray *viewObjects;
+@property (nonatomic, retain) NSArray *viewObjects;
 
 @end
 
