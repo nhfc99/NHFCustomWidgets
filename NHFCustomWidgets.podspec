@@ -55,4 +55,15 @@ Pod::Spec.new do |s|
         ss.source_files = 'Classes/NHFMacroDefinition/NHFMacroDefinition.{h}'
         ss.public_header_files = 'Classes/NHFMacroDefinition/NHFMacroDefinition.h'
     end
+
+    s.subspec 'NHFWeakTimer' do |ss|
+        ss.source_files = 'Classes/NHFWeakTimer/NHFWeakTimer.{h,m}'
+        ss.public_header_files = 'Classes/NHFWeakTimer/NHFWeakTimer.h'
+    end
+
+    s.subspec 'NHFCycleView' do |ss|
+        ss.dependency 'NHFWeakTimer'
+        ss.source_files = 'Classes/NHFCycleView/NHFCycleView.{h,m}'
+        ss.public_header_files = 'Classes/NHFCycleView/NHFCycleView.h'
+    end
 end
