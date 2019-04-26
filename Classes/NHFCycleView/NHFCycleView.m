@@ -35,6 +35,7 @@
 @property (nonatomic, strong) UIView *view2;
 //页码
 @property (nonatomic, assign) NSInteger currentIndex;
+//定时器
 @property (nonatomic, weak) NSTimer *timer;
 
 @property (nonatomic, assign) CGFloat animateDuration;
