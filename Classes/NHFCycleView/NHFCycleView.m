@@ -132,7 +132,6 @@
 
 - (void)loopTimer {
     CGPoint offset = CGPointMake(width * 2, 0);
-    
     [UIView animateWithDuration:self.animateDuration animations:^{
         self->_mainScrollView.contentOffset = offset;
     } completion:^(BOOL finished) {
