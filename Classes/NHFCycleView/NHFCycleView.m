@@ -101,9 +101,24 @@
     self.currentIndex = 0;
     self.animateDuration = self.cycleParam.animateDuration;
     self.interval = self.cycleParam.interval;
-    self.viewObjects = self.cycleParam.viewObjects;
+    self.viewObjects = list;
     
     [self loopTimer];
+}
+
+- (void)pageAction {
+    NSInteger cu = _currentIndex;
+    if (self.cycleParam.viewObjects.count == 1) {
+        cu = 0;
+    } else if (self.cycleParam.viewObjects.count == 2) {
+        if (_currentIndex == 3) {
+            cu = 0;
+        }
+    }
+    
+    if (_curPage) {
+        _curPage(cu);
+    }
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -150,9 +165,7 @@
         }
     }
     
-    if (_curPage) {
-        _curPage(_currentIndex);
-    }
+    [self pageAction];
     
     //移除所有的对象
     for (UIView *view in self.viewObjects) {
