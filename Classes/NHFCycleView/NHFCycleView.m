@@ -10,6 +10,8 @@
 #import "Masonry.h"
 #import "NHFTimer.h"
 
+#define kNHFCycleViewBaseTag 1000
+
 @implementation NHFCycleParam
 
 - (instancetype)init
@@ -84,24 +86,13 @@
 }
 
 - (void)start {
-    NSMutableArray *list = [[NSMutableArray alloc] initWithArray:self.cycleParam.viewObjects];
     if (self.cycleParam.viewObjects.count == 0) {
         return;
     }
-    
-    if (self.cycleParam.viewObjects.count == 1) {
-        [list addObject:self.cycleParam.viewObjects.firstObject];
-        [list addObject:self.cycleParam.viewObjects.firstObject];
-    }
-    
-    if (self.cycleParam.viewObjects.count == 2) {
-        [list addObject:self.cycleParam.viewObjects.firstObject];
-    }
-    
     self.currentIndex = 0;
     self.animateDuration = self.cycleParam.animateDuration;
     self.interval = self.cycleParam.interval;
-    self.viewObjects = list;
+    self.viewObjects = self.cycleParam.viewObjects;
     
     [self loopTimer];
 }
@@ -173,33 +164,51 @@
     }
     
     //中间
+    NSInteger index = _currentIndex;
     UIView *view = self.viewObjects[_currentIndex];
+    view.userInteractionEnabled = true;
+    view.tag = (kNHFCycleViewBaseTag + index);
     [self.view1 addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view1);
     }];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    [view addGestureRecognizer:tap];
+    
     //左边
     if (_currentIndex - 1 == -1) {
-        view = self.viewObjects[self.viewObjects.count - 1];
+        index = (self.viewObjects.count - 1);
     } else {
-        view = self.viewObjects[_currentIndex - 1];
+        index = (_currentIndex - 1);
     }
+    view = self.viewObjects[index];
+    view.userInteractionEnabled = true;
+    view.tag = (kNHFCycleViewBaseTag + index);
     [self.view0 addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view0);
     }];
     
+    tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    [view addGestureRecognizer:tap];
+    
     //右边
     if (_currentIndex + 1 == self.viewObjects.count) {
-        view = self.viewObjects[0];
+        index = 0;
     } else {
-        view = self.viewObjects[_currentIndex + 1];
+        index = (_currentIndex + 1);
     }
+    view = self.viewObjects[index];
+    view.userInteractionEnabled = true;
+    view.tag = (kNHFCycleViewBaseTag + index);
     [self.view2 addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view2);
     }];
+    
+    tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    [view addGestureRecognizer:tap];
 }
 
 - (void)setInterval:(NSTimeInterval)interval {
@@ -209,6 +218,12 @@
     }
     
     [self startAutoScroll:interval];
+}
+
+- (void)tapGesture:(UITapGestureRecognizer *)tap {
+    if (_tapIndex) {
+        _tapIndex(tap.view.tag - kNHFCycleViewBaseTag);
+    }
 }
 
 - (void)dealloc

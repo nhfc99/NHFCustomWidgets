@@ -23,6 +23,7 @@ typedef void(^kNHFPage)(NSInteger page);
 @interface NHFCycleView : UIView
 
 @property (nonatomic, copy) kNHFPage curPage;
+@property (nonatomic, copy) kNHFPage tapIndex;
 
 @property (nonatomic, retain) NHFCycleParam *cycleParam;
 
