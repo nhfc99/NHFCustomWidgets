@@ -24,7 +24,7 @@
 
 typedef void (^NHFTimerHandler)(id userInfo);
 
-@interface NHFWeakTimer : NSObject
+@interface HWWeakTimer : NSObject
 
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                       target:(id)aTarget
