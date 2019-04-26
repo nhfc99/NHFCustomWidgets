@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.0.66"
+    s.version      = "1.0.68"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -59,5 +59,11 @@ Pod::Spec.new do |s|
     s.subspec 'NHFWeakTimer' do |ss|
         ss.source_files = 'Classes/NHFWeakTimer/NHFWeakTimer.{h,m}'
         ss.public_header_files = 'Classes/NHFWeakTimer/NHFWeakTimer.h'
+    end
+
+    s.subspec 'NHFCycleView' do |ss|
+        ss.dependency 'NHFWeakTimer'
+        ss.source_files = 'Classes/NHFCycleView/NHFCycleView.{h,m}'
+        ss.public_header_files = 'Classes/NHFCycleView/NHFCycleView.h'
     end
 end
