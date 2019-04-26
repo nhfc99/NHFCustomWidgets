@@ -20,9 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "HWWeakTimer.h"
+#import "NHFWeakTimer.h"
 
-@interface HWWeakTimerTarget : NSObject
+@interface NHFWeakTimerTarget : NSObject
 
 @property (nonatomic, weak) id target;
 @property (nonatomic, assign) SEL selector;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation HWWeakTimerTarget
+@implementation NHFWeakTimerTarget
 
 - (void) fire:(NSTimer *)timer {
     if(self.target) {
@@ -45,14 +45,14 @@
 
 @end
 
-@implementation HWWeakTimer
+@implementation NHFWeakTimer
 
 + (NSTimer *) scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                       target:(id)aTarget
                                     selector:(SEL)aSelector
                                     userInfo:(id)userInfo
                                      repeats:(BOOL)repeats {
-    HWWeakTimerTarget* timerTarget = [[HWWeakTimerTarget alloc] init];
+    NHFWeakTimerTarget* timerTarget = [[NHFWeakTimerTarget alloc] init];
     timerTarget.target = aTarget;
     timerTarget.selector = aSelector;
     timerTarget.timer = [NSTimer scheduledTimerWithTimeInterval:interval

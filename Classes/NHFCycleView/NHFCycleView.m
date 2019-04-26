@@ -8,7 +8,7 @@
 
 #import "NHFCycleView.h"
 #import "Masonry.h"
-#import "HWWeakTimer.h"
+#import "NHFWeakTimer.h"
 
 @implementation NHFCycleParam
 
@@ -110,7 +110,7 @@
 }
 
 - (void)startAutoScroll:(NSTimeInterval)interval {
-    _timer = [HWWeakTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(loopTimer) userInfo:nil repeats:YES];
+    _timer = [NHFWeakTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(loopTimer) userInfo:nil repeats:YES];
 }
 
 - (void)loopTimer {

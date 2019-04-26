@@ -16,7 +16,7 @@
 #import "NHFImageTableViewCell.h"
 #import "UITableViewCell+Custom.h"
 #import "NHFMacroDefinition.h"
-#import "HWWeakTimer.h"
+#import "NHFWeakTimer.h"
 #import "NHFCycleView.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
