@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		527D6F51D0C6E4D77384ED17 /* libPods-NHFCustomWidgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058680B22B663F52F1D296D0 /* libPods-NHFCustomWidgets.a */; };
-		8921E63922729F2900460D7C /* NHFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8921E63422729F2900460D7C /* NHFCycleView.m */; };
-		8921E63A22729F2900460D7C /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8921E63722729F2900460D7C /* HWWeakTimer.m */; };
 		892B28CB2160AB840074708A /* NHFWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B28C92160AB840074708A /* NHFWindowView.m */; };
 		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
 		89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89569E672177332B00171F02 /* NHFELCycleVerticalView.m */; };
@@ -28,10 +26,6 @@
 
 /* Begin PBXFileReference section */
 		058680B22B663F52F1D296D0 /* libPods-NHFCustomWidgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHFCustomWidgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8921E63422729F2900460D7C /* NHFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFCycleView.m; sourceTree = "<group>"; };
-		8921E63522729F2900460D7C /* NHFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFCycleView.h; sourceTree = "<group>"; };
-		8921E63722729F2900460D7C /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
-		8921E63822729F2900460D7C /* HWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWWeakTimer.h; sourceTree = "<group>"; };
 		892B28C92160AB840074708A /* NHFWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFWindowView.m; sourceTree = "<group>"; };
 		892B28CA2160AB840074708A /* NHFWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFWindowView.h; sourceTree = "<group>"; };
 		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
@@ -75,24 +69,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8921E63322729F2900460D7C /* NHFCycleView */ = {
-			isa = PBXGroup;
-			children = (
-				8921E63522729F2900460D7C /* NHFCycleView.h */,
-				8921E63422729F2900460D7C /* NHFCycleView.m */,
-			);
-			path = NHFCycleView;
-			sourceTree = "<group>";
-		};
-		8921E63622729F2900460D7C /* HWWeakTimer */ = {
-			isa = PBXGroup;
-			children = (
-				8921E63822729F2900460D7C /* HWWeakTimer.h */,
-				8921E63722729F2900460D7C /* HWWeakTimer.m */,
-			);
-			path = HWWeakTimer;
-			sourceTree = "<group>";
-		};
 		892B28C82160AB840074708A /* NHFWindowView */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +134,6 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8921E63622729F2900460D7C /* HWWeakTimer */,
-				8921E63322729F2900460D7C /* NHFCycleView */,
 				89B655A921E09C770079073E /* NHFMacroDefinition */,
 				89569E662177332B00171F02 /* NHFELCycleVerticalView */,
 				8980F74421745A4700602720 /* UITableViewCell+Custom */,
@@ -336,7 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8921E63A22729F2900460D7C /* HWWeakTimer.m in Sources */,
 				897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */,
 				8959268221490ED60088FD94 /* ViewController.m in Sources */,
 				8959268D21490ED80088FD94 /* main.m in Sources */,
@@ -345,7 +318,6 @@
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
 				897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */,
-				8921E63922729F2900460D7C /* NHFCycleView.m in Sources */,
 				8980F74A21745A8000602720 /* UITableViewCell+Custom.m in Sources */,
 				89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */,
 			);
