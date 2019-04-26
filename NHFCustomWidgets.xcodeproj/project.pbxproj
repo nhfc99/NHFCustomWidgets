@@ -78,8 +78,8 @@
 		8921E63322729F2900460D7C /* NHFCycleView */ = {
 			isa = PBXGroup;
 			children = (
-				8921E63422729F2900460D7C /* NHFCycleView.m */,
 				8921E63522729F2900460D7C /* NHFCycleView.h */,
+				8921E63422729F2900460D7C /* NHFCycleView.m */,
 			);
 			path = NHFCycleView;
 			sourceTree = "<group>";
@@ -87,8 +87,8 @@
 		8921E63622729F2900460D7C /* NHFWeakTimer */ = {
 			isa = PBXGroup;
 			children = (
-				8921E63722729F2900460D7C /* NHFWeakTimer.m */,
 				8921E63822729F2900460D7C /* NHFWeakTimer.h */,
+				8921E63722729F2900460D7C /* NHFWeakTimer.m */,
 			);
 			path = NHFWeakTimer;
 			sourceTree = "<group>";
