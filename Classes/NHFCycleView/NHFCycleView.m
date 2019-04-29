@@ -24,6 +24,25 @@
     return self;
 }
 
+- (NSArray *)checkModels:(NSArray *)resource {
+    NSMutableArray *list = [[NSMutableArray alloc] initWithArray:resource];
+    if (resource.count == 0) {
+        return nil;
+    }
+    
+    if (resource.count == 1) {
+        [list addObject:resource.firstObject];
+        [list addObject:resource.firstObject];
+    }
+    
+    if (resource.count == 2) {
+        [list addObject:resource.firstObject];
+        [list addObject:resource.lastObject];
+    }
+    _modelObjects = list;
+    return list;
+}
+
 @end
 
 @interface NHFCycleView () <UIScrollViewDelegate> {
@@ -98,17 +117,8 @@
 }
 
 - (void)pageAction {
-    NSInteger cu = _currentIndex;
-    if (self.cycleParam.viewObjects.count == 1) {
-        cu = 0;
-    } else if (self.cycleParam.viewObjects.count == 2) {
-        if (_currentIndex == 3) {
-            cu = 0;
-        }
-    }
-    
     if (_curPage) {
-        _curPage(cu);
+        _curPage(_currentIndex, self.cycleParam.modelObjects[_currentIndex]);
     }
 }
 
@@ -221,7 +231,8 @@
 
 - (void)tapGesture:(UITapGestureRecognizer *)tap {
     if (_tapIndex) {
-        _tapIndex(tap.view.tag - kNHFCycleViewBaseTag);
+        NSInteger item = tap.view.tag - kNHFCycleViewBaseTag;
+        _tapIndex(item, self.cycleParam.modelObjects[item]);
     }
 }
 
