@@ -67,4 +67,10 @@ Pod::Spec.new do |s|
         ss.source_files = 'Classes/NHFCycleView/NHFCycleView.{h,m}'
         ss.public_header_files = 'Classes/NHFCycleView/NHFCycleView.h'
     end
+
+    s.subspec 'NHFCycleView' do |ss|
+        ss.dependency 'NHFCustomWidgets/NHFKeychainTool'
+        ss.source_files = 'Classes/NHFKeychainTool/NHFKeychainTool.{h,m}'
+        ss.public_header_files = 'Classes/NHFKeychainTool/NHFKeychainTool.h'
+    end
 end
