@@ -18,5 +18,6 @@
 #import "NHFMacroDefinition.h"
 #import "NHFTimer.h"
 #import "NHFCycleView.h"
+#import "NHFKeychainTool.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
