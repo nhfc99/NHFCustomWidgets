@@ -39,6 +39,7 @@
         [list addObject:resource.firstObject];
         [list addObject:resource.lastObject];
     }
+    [list exchangeObjectAtIndex:0 withObjectAtIndex:(list.count-1)];
     _modelObjects = list;
     return list;
 }
