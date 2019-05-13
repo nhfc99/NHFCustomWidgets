@@ -39,7 +39,9 @@
         [list addObject:resource.firstObject];
         [list addObject:resource.lastObject];
     }
-    [list exchangeObjectAtIndex:0 withObjectAtIndex:(list.count-1)];
+    id object = list.lastObject;
+    [list removeLastObject];
+    [list insertObject:object atIndex:0];
     _modelObjects = list;
     return list;
 }
@@ -111,10 +113,9 @@
     }
     self.currentIndex = 0;
     self.animateDuration = self.cycleParam.animateDuration;
-    self.interval = self.cycleParam.interval;
     self.viewObjects = self.cycleParam.viewObjects;
-    
     [self loopTimer];
+    self.interval = self.cycleParam.interval;
 }
 
 - (void)pageAction {
@@ -142,11 +143,10 @@
 }
 
 - (void)loopTimer {
-    CGPoint offset = CGPointMake(width * 2, 0);
     [UIView animateWithDuration:self.animateDuration animations:^{
-        self->_mainScrollView.contentOffset = offset;
+        self->_mainScrollView.contentOffset = CGPointMake(self->width * 2, 0);
     } completion:^(BOOL finished) {
-        [self resetView:offset.x];
+        [self resetView:(self->width * 2)];
         self->_mainScrollView.contentOffset = CGPointMake(self->width, 0);
     }];
 }
