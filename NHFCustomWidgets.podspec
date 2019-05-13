@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.2"
+    s.version      = "1.2.1"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -71,5 +71,10 @@ Pod::Spec.new do |s|
     s.subspec 'NHFKeychainTool' do |ss|
         ss.source_files = 'Classes/NHFKeychainTool/NHFKeychainTool.{h,m}'
         ss.public_header_files = 'Classes/NHFKeychainTool/NHFKeychainTool.h'
+    end
+
+    s.subspec 'NHFMemoryObjectCache' do |ss|
+        ss.source_files = 'Classes/NHFMemoryObjectCache/NHFMemoryObjectCache.{h,m}'
+        ss.public_header_files = 'Classes/NHFMemoryObjectCache/NHFMemoryObjectCache.h'
     end
 end

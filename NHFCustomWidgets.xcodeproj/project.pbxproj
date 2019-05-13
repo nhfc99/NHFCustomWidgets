@@ -12,6 +12,7 @@
 		892B28CB2160AB840074708A /* NHFWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B28C92160AB840074708A /* NHFWindowView.m */; };
 		89415050227E85C400003A8B /* NHFKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941504F227E85C400003A8B /* NHFKeychainTool.m */; };
 		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
+		895468D42286D2F4002096AC /* NHFMemoryObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 895468D32286D2F4002096AC /* NHFMemoryObjectCache.m */; };
 		89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89569E672177332B00171F02 /* NHFELCycleVerticalView.m */; };
 		8959267F21490ED60088FD94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959267E21490ED60088FD94 /* AppDelegate.m */; };
 		8959268221490ED60088FD94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8959268121490ED60088FD94 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		8941504F227E85C400003A8B /* NHFKeychainTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFKeychainTool.m; sourceTree = "<group>"; };
 		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
 		894D4598215DB46D00AF32C4 /* NHFSynService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFSynService.m; sourceTree = "<group>"; };
+		895468D22286D2F4002096AC /* NHFMemoryObjectCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFMemoryObjectCache.h; sourceTree = "<group>"; };
+		895468D32286D2F4002096AC /* NHFMemoryObjectCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFMemoryObjectCache.m; sourceTree = "<group>"; };
 		89569E672177332B00171F02 /* NHFELCycleVerticalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFELCycleVerticalView.m; sourceTree = "<group>"; };
 		89569E682177332B00171F02 /* NHFELCycleVerticalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFELCycleVerticalView.h; sourceTree = "<group>"; };
 		8959267A21490ED60088FD94 /* NHFCustomWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHFCustomWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,15 @@
 			path = NHFSynService;
 			sourceTree = "<group>";
 		};
+		895468D12286D2C8002096AC /* NHFMemoryObjectCache */ = {
+			isa = PBXGroup;
+			children = (
+				895468D22286D2F4002096AC /* NHFMemoryObjectCache.h */,
+				895468D32286D2F4002096AC /* NHFMemoryObjectCache.m */,
+			);
+			path = NHFMemoryObjectCache;
+			sourceTree = "<group>";
+		};
 		89569E662177332B00171F02 /* NHFELCycleVerticalView */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				895468D12286D2C8002096AC /* NHFMemoryObjectCache */,
 				8941504D227E85B300003A8B /* NHFKeychainTool */,
 				89BF0CC42272D067004B7A86 /* NHFCycleView */,
 				8921E63B2272BE4500460D7C /* NHFTimer */,
@@ -356,6 +369,7 @@
 				892B28CB2160AB840074708A /* NHFWindowView.m in Sources */,
 				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
+				895468D42286D2F4002096AC /* NHFMemoryObjectCache.m in Sources */,
 				89415050227E85C400003A8B /* NHFKeychainTool.m in Sources */,
 				8921E6412272BE4500460D7C /* NHFTimer.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,

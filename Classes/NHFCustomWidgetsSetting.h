@@ -19,5 +19,6 @@
 #import "NHFTimer.h"
 #import "NHFCycleView.h"
 #import "NHFKeychainTool.h"
+#import "NHFMemoryObjectCache.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
