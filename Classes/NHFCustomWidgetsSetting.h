@@ -20,5 +20,6 @@
 #import "NHFCycleView.h"
 #import "NHFKeychainTool.h"
 #import "NHFMemoryObjectCache.h"
+#import "UITextField+Attribute.h"
 
 #endif /* NHFCustomWidgetsSetting_h */

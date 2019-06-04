@@ -10,6 +10,7 @@
 		527D6F51D0C6E4D77384ED17 /* libPods-NHFCustomWidgets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058680B22B663F52F1D296D0 /* libPods-NHFCustomWidgets.a */; };
 		8921E6412272BE4500460D7C /* NHFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8921E63C2272BE4500460D7C /* NHFTimer.m */; };
 		892B28CB2160AB840074708A /* NHFWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B28C92160AB840074708A /* NHFWindowView.m */; };
+		8933FBEC22A606AF007825EF /* UITextField+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933FBEB22A606AF007825EF /* UITextField+Attribute.m */; };
 		89415050227E85C400003A8B /* NHFKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941504F227E85C400003A8B /* NHFKeychainTool.m */; };
 		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
 		895468D42286D2F4002096AC /* NHFMemoryObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 895468D32286D2F4002096AC /* NHFMemoryObjectCache.m */; };
@@ -34,6 +35,8 @@
 		8921E63D2272BE4500460D7C /* NHFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFTimer.h; sourceTree = "<group>"; };
 		892B28C92160AB840074708A /* NHFWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFWindowView.m; sourceTree = "<group>"; };
 		892B28CA2160AB840074708A /* NHFWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFWindowView.h; sourceTree = "<group>"; };
+		8933FBEA22A606AF007825EF /* UITextField+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Attribute.h"; sourceTree = "<group>"; };
+		8933FBEB22A606AF007825EF /* UITextField+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Attribute.m"; sourceTree = "<group>"; };
 		8941504E227E85C400003A8B /* NHFKeychainTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFKeychainTool.h; sourceTree = "<group>"; };
 		8941504F227E85C400003A8B /* NHFKeychainTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFKeychainTool.m; sourceTree = "<group>"; };
 		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
@@ -97,6 +100,15 @@
 				892B28C92160AB840074708A /* NHFWindowView.m */,
 			);
 			path = NHFWindowView;
+			sourceTree = "<group>";
+		};
+		8933FBE922A606AF007825EF /* UITextField+Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				8933FBEA22A606AF007825EF /* UITextField+Attribute.h */,
+				8933FBEB22A606AF007825EF /* UITextField+Attribute.m */,
+			);
+			path = "UITextField+Attribute";
 			sourceTree = "<group>";
 		};
 		8941504D227E85B300003A8B /* NHFKeychainTool */ = {
@@ -173,6 +185,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8933FBE922A606AF007825EF /* UITextField+Attribute */,
 				895468D12286D2C8002096AC /* NHFMemoryObjectCache */,
 				8941504D227E85B300003A8B /* NHFKeychainTool */,
 				89BF0CC42272D067004B7A86 /* NHFCycleView */,
@@ -363,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BF0CC72272D067004B7A86 /* NHFCycleView.m in Sources */,
+				8933FBEC22A606AF007825EF /* UITextField+Attribute.m in Sources */,
 				897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */,
 				8959268221490ED60088FD94 /* ViewController.m in Sources */,
 				8959268D21490ED80088FD94 /* main.m in Sources */,
