@@ -63,6 +63,17 @@ static NHFWindowView *object = nil;
     }
 }
 
+- (void)modalView:(nullable id)view
+       touchClose:(BOOL)touchClose
+            touch:(nullable TouchObject)touch
+            color:(nullable UIColor *)color
+         animated:(BOOL)animated
+            close:(nullable NHFWindowViewClose)nhfWindowViewClose
+   nhfWindowLevel:(NHFWindowLevel)nhfWindowLevel {
+    [self modalView:view touchClose:touchClose touch:touch color:color animated:animated close:nhfWindowViewClose];
+    [_window setWindowLevel:nhfWindowLevel];
+}
+
 - (void)touchWindow {
     if (_touch == nil) {
         [self closeWindowAlertWithanimated:true];
