@@ -70,7 +70,43 @@ static NHFWindowView *object = nil;
          animated:(BOOL)animated
             close:(nullable NHFWindowViewClose)nhfWindowViewClose
    nhfWindowLevel:(NHFWindowLevel)nhfWindowLevel {
-    [self modalView:view touchClose:touchClose touch:touch color:color animated:animated close:nhfWindowViewClose];
+    //显关闭之前的视图
+    [self closeWindowAlertWithanimated:false];
+    
+    //绑定回调
+    _touch = touch;
+    _nhfWindowViewClose = nhfWindowViewClose;
+    
+    //视图
+    if (view == nil) {
+        return;
+    }
+    _theView = view;
+    _bgView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [_window addSubview:_bgView];
+    [_window addSubview:view];
+    [_window makeKeyAndVisible];
+    
+    //颜色
+    if (color == nil) {
+        color = [UIColor colorWithWhite:0 alpha:0.5];
+    }
+    [_bgView setBackgroundColor:color];
+    
+    //触摸
+    if (touchClose) {
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchWindow)];
+        [_bgView addGestureRecognizer:tapGesture];
+    }
+    
+    //渐显动画
+    if (animated) {
+        [_bgView setAlpha:0];
+        [UIView animateWithDuration:0.2 animations:^{
+            [self->_bgView setAlpha:1];
+        } completion:nil];
+    }
     [_window setWindowLevel:nhfWindowLevel];
 }
 

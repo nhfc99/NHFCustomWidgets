@@ -29,7 +29,7 @@ typedef void(^NHFWindowViewClose)(void);
 //基础视图
 @property (nonatomic, strong) UIView *bgView;
 @property (nonatomic, weak) id theView;
-@property (nonatomic, weak) UIWindow *window;
+@property (nonatomic, strong) UIWindow *window;
 
 + (instancetype)getInstancetype;
 
