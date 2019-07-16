@@ -130,6 +130,11 @@ static NHFWindowView *object = nil;
             if (self->_nhfWindowViewClose != nil) {
                 self->_nhfWindowViewClose();
             }
+            
+            if (self->_window.windowLevel > 0) {
+                [self->_window removeFromSuperview];
+                self->_window = nil;
+            }
         }];
     } else {
         [self removeView:_theView];
@@ -137,6 +142,11 @@ static NHFWindowView *object = nil;
         
         if (_nhfWindowViewClose != nil) {
             _nhfWindowViewClose();
+        }
+        
+        if (self->_window.windowLevel > 0) {
+            [self->_window removeFromSuperview];
+            self->_window = nil;
         }
     }
 }
