@@ -249,7 +249,6 @@
 				89EC875C22F5951A00DA9913 /* NSString */,
 				89EC875422F594B000DA9913 /* JsonDeal */,
 				89EC874D22F593CD00DA9913 /* ZFBadgeNumber */,
-				89EC874022F5931500DA9913 /* Button */,
 				89EC873922F58D3100DA9913 /* NHFUpLoadAndDownImages */,
 				89EC871C22F5786A00DA9913 /* Base */,
 				8933FBE922A606AF007825EF /* UITextField+Attribute */,
@@ -268,15 +267,6 @@
 				8959269A21491A940088FD94 /* NHFCustomWidgetsSetting.h */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		8959269421490EE90088FD94 /* UIButton+NHFBlock */ = {
-			isa = PBXGroup;
-			children = (
-				8959269621490F200088FD94 /* UIButton+NHFBlock.h */,
-				8959269721490F200088FD94 /* UIButton+NHFBlock.m */,
-			);
-			path = "UIButton+NHFBlock";
 			sourceTree = "<group>";
 		};
 		897CD0CA21731D440026E0DC /* NHFImageTableViewCell */ = {
@@ -310,7 +300,16 @@
 		8981B099214939B200D1E0A3 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				8959269421490EE90088FD94 /* UIButton+NHFBlock */,
+				89EC874922F593B300DA9913 /* UIBarButtonItem+Badge.h */,
+				89EC874722F593B300DA9913 /* UIBarButtonItem+Badge.m */,
+				89EC874A22F593B300DA9913 /* UIButton+Badge.h */,
+				89EC874822F593B300DA9913 /* UIButton+Badge.m */,
+				89EC874522F5934500DA9913 /* UIButton+CenterImageAndTitle.h */,
+				89EC874422F5934500DA9913 /* UIButton+CenterImageAndTitle.m */,
+				89EC874122F5932200DA9913 /* UIButtonMS.h */,
+				89EC874222F5932200DA9913 /* UIButtonMS.m */,
+				8959269621490F200088FD94 /* UIButton+NHFBlock.h */,
+				8959269721490F200088FD94 /* UIButton+NHFBlock.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -418,21 +417,6 @@
 				89EC873D22F58D3100DA9913 /* NHFDownImages.m */,
 			);
 			path = NHFUpLoadAndDownImages;
-			sourceTree = "<group>";
-		};
-		89EC874022F5931500DA9913 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				89EC874922F593B300DA9913 /* UIBarButtonItem+Badge.h */,
-				89EC874722F593B300DA9913 /* UIBarButtonItem+Badge.m */,
-				89EC874A22F593B300DA9913 /* UIButton+Badge.h */,
-				89EC874822F593B300DA9913 /* UIButton+Badge.m */,
-				89EC874522F5934500DA9913 /* UIButton+CenterImageAndTitle.h */,
-				89EC874422F5934500DA9913 /* UIButton+CenterImageAndTitle.m */,
-				89EC874122F5932200DA9913 /* UIButtonMS.h */,
-				89EC874222F5932200DA9913 /* UIButtonMS.m */,
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 		89EC874D22F593CD00DA9913 /* ZFBadgeNumber */ = {

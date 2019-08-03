@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
     s.frameworks = 'QuartzCore','CoreData','Foundation','UIKit','Security'
 
     s.subspec 'UIButton' do |ss|
-        ss.source_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.{h,m}'
-        ss.public_header_files = 'Classes/UIButton/UIButton+NHFBlock/UIButton+NHFBlock.h'
+        ss.source_files = 'Classes/UIButton/*.{h,m}'
+        ss.public_header_files = 'Classes/UIButton/*.h'
     end
 
     s.subspec 'NHFSearchView' do |ss|
@@ -98,11 +98,6 @@ Pod::Spec.new do |s|
     s.subspec 'NHFUpLoadAndDownImages' do |ss|
         ss.source_files = 'Classes/NHFUpLoadAndDownImages/*.{h,m}'
         ss.public_header_files = 'Classes/NHFUpLoadAndDownImages/*.h'
-    end
-
-    s.subspec 'UIButton' do |ss|
-        ss.source_files = 'Classes/Button/*.{h,m}'
-        ss.public_header_files = 'Classes/Button/*.h'
     end
 
     s.subspec 'ZFBadgeNumber' do |ss|
