@@ -12,6 +12,7 @@
 		892B28CB2160AB840074708A /* NHFWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B28C92160AB840074708A /* NHFWindowView.m */; };
 		8933FBEC22A606AF007825EF /* UITextField+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933FBEB22A606AF007825EF /* UITextField+Attribute.m */; };
 		89415050227E85C400003A8B /* NHFKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941504F227E85C400003A8B /* NHFKeychainTool.m */; };
+		8943BF6F22F5D0B000289F67 /* KGStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8943BF6D22F5D0B000289F67 /* KGStatusBar.m */; };
 		894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4598215DB46D00AF32C4 /* NHFSynService.m */; };
 		895468D42286D2F4002096AC /* NHFMemoryObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 895468D32286D2F4002096AC /* NHFMemoryObjectCache.m */; };
 		89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89569E672177332B00171F02 /* NHFELCycleVerticalView.m */; };
@@ -58,6 +59,8 @@
 		8933FBEB22A606AF007825EF /* UITextField+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Attribute.m"; sourceTree = "<group>"; };
 		8941504E227E85C400003A8B /* NHFKeychainTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFKeychainTool.h; sourceTree = "<group>"; };
 		8941504F227E85C400003A8B /* NHFKeychainTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHFKeychainTool.m; sourceTree = "<group>"; };
+		8943BF6D22F5D0B000289F67 /* KGStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGStatusBar.m; sourceTree = "<group>"; };
+		8943BF6E22F5D0B000289F67 /* KGStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGStatusBar.h; sourceTree = "<group>"; };
 		894D4597215DB46D00AF32C4 /* NHFSynService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFSynService.h; sourceTree = "<group>"; };
 		894D4598215DB46D00AF32C4 /* NHFSynService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFSynService.m; sourceTree = "<group>"; };
 		895468D22286D2F4002096AC /* NHFMemoryObjectCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHFMemoryObjectCache.h; sourceTree = "<group>"; };
@@ -176,6 +179,24 @@
 				8941504F227E85C400003A8B /* NHFKeychainTool.m */,
 			);
 			path = NHFKeychainTool;
+			sourceTree = "<group>";
+		};
+		8943BF6C22F5D0B000289F67 /* KGStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				8943BF6D22F5D0B000289F67 /* KGStatusBar.m */,
+				8943BF6E22F5D0B000289F67 /* KGStatusBar.h */,
+			);
+			path = KGStatusBar;
+			sourceTree = "<group>";
+		};
+		8943BF7022F5D0FC00289F67 /* UIView+ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89EC876522F5959F00DA9913 /* UIView+ViewController.m */,
+				89EC876622F5959F00DA9913 /* UIView+ViewController.h */,
+			);
+			path = "UIView+ViewController";
 			sourceTree = "<group>";
 		};
 		894D4596215DB46D00AF32C4 /* NHFSynService */ = {
@@ -460,8 +481,8 @@
 		89EC876422F5959F00DA9913 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				89EC876522F5959F00DA9913 /* UIView+ViewController.m */,
-				89EC876622F5959F00DA9913 /* UIView+ViewController.h */,
+				8943BF7022F5D0FC00289F67 /* UIView+ViewController */,
+				8943BF6C22F5D0B000289F67 /* KGStatusBar */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -625,6 +646,7 @@
 				89EC873722F5786A00DA9913 /* BaseNavigationController.m in Sources */,
 				892B28CB2160AB840074708A /* NHFWindowView.m in Sources */,
 				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
+				8943BF6F22F5D0B000289F67 /* KGStatusBar.m in Sources */,
 				89EC875722F594B000DA9913 /* JsonDeal.m in Sources */,
 				89EC873322F5786A00DA9913 /* BaseWKWebViewController.m in Sources */,
 				89EC874C22F593B300DA9913 /* UIButton+Badge.m in Sources */,
