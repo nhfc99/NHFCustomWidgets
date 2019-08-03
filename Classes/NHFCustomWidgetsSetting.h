@@ -21,5 +21,12 @@
 #import "NHFKeychainTool.h"
 #import "NHFMemoryObjectCache.h"
 #import "UITextField+Attribute.h"
+#import "BaseView.h"
+#import "BaseWKWebViewController.h"
+#import "BaseViewController.h"
+#import "BaseTableViewController.h"
+#import "BaseTableViewCell.h"
+#import "BaseNavigationController.h"
+#import "BaseObject.h"
 
 #endif /* NHFCustomWidgetsSetting_h */

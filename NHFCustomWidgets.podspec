@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.3"
+    s.version      = "1.3.4"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'Base' do |ss|
         ss.dependency 'NHFCustomWidgets/NHFMacroDefinition'
-        ss.source_files = 'Classes/**/*.{h,m}'
-        ss.public_header_files = 'Classes/**/*.h'
+        ss.source_files = 'Classes/Base/**/*.{h,m}'
+        ss.public_header_files = 'Classes/Base/**/*.h'
     end
 end
