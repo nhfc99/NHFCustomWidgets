@@ -34,6 +34,8 @@
 		89EC873622F5786A00DA9913 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872B22F5786A00DA9913 /* BaseTableViewCell.m */; };
 		89EC873722F5786A00DA9913 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872E22F5786A00DA9913 /* BaseNavigationController.m */; };
 		89EC873822F5786B00DA9913 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873122F5786A00DA9913 /* BaseObject.m */; };
+		89EC873E22F58D3100DA9913 /* NHFUpLoadImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873C22F58D3100DA9913 /* NHFUpLoadImages.m */; };
+		89EC873F22F58D3100DA9913 /* NHFDownImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873D22F58D3100DA9913 /* NHFDownImages.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,10 @@
 		89EC872E22F5786A00DA9913 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		89EC873022F5786A00DA9913 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
 		89EC873122F5786A00DA9913 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		89EC873A22F58D3100DA9913 /* NHFUpLoadImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFUpLoadImages.h; sourceTree = "<group>"; };
+		89EC873B22F58D3100DA9913 /* NHFDownImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFDownImages.h; sourceTree = "<group>"; };
+		89EC873C22F58D3100DA9913 /* NHFUpLoadImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFUpLoadImages.m; sourceTree = "<group>"; };
+		89EC873D22F58D3100DA9913 /* NHFDownImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFDownImages.m; sourceTree = "<group>"; };
 		A6CC9707AF637242A3EFD497 /* Pods-NHFCustomWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.release.xcconfig"; sourceTree = "<group>"; };
 		E098ACDD343B669D61E16754 /* Pods-NHFCustomWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +212,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89EC873922F58D3100DA9913 /* NHFUpLoadAndDownImages */,
 				89EC871C22F5786A00DA9913 /* Base */,
 				8933FBE922A606AF007825EF /* UITextField+Attribute */,
 				895468D12286D2C8002096AC /* NHFMemoryObjectCache */,
@@ -364,6 +371,17 @@
 			path = BaseObject;
 			sourceTree = "<group>";
 		};
+		89EC873922F58D3100DA9913 /* NHFUpLoadAndDownImages */ = {
+			isa = PBXGroup;
+			children = (
+				89EC873A22F58D3100DA9913 /* NHFUpLoadImages.h */,
+				89EC873B22F58D3100DA9913 /* NHFDownImages.h */,
+				89EC873C22F58D3100DA9913 /* NHFUpLoadImages.m */,
+				89EC873D22F58D3100DA9913 /* NHFDownImages.m */,
+			);
+			path = NHFUpLoadAndDownImages;
+			sourceTree = "<group>";
+		};
 		A1788ADFBC1D24FE408A18FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +536,8 @@
 				8921E6412272BE4500460D7C /* NHFTimer.m in Sources */,
 				89EC873222F5786A00DA9913 /* BaseView.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
+				89EC873E22F58D3100DA9913 /* NHFUpLoadImages.m in Sources */,
+				89EC873F22F58D3100DA9913 /* NHFDownImages.m in Sources */,
 				897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */,
 				8980F74A21745A8000602720 /* UITableViewCell+Custom.m in Sources */,
 				89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */,

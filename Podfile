@@ -6,4 +6,5 @@ target 'NHFCustomWidgets' do
   pod 'NHFNavigationBar'
   pod 'IQKeyboardManager'
   pod 'MJRefresh'
+  pod 'AFNetworking'
 end

@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - IQKeyboardManager (6.4.0)
   - Masonry (1.1.0)
   - MJRefresh (3.2.0)
@@ -7,6 +22,7 @@ PODS:
   - NhfUIColorUnit (1.0.2)
 
 DEPENDENCIES:
+  - AFNetworking
   - IQKeyboardManager
   - Masonry
   - MJRefresh
@@ -16,6 +32,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
     - MJRefresh
@@ -24,6 +41,7 @@ SPEC REPOS:
     - NhfUIColorUnit
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
@@ -31,6 +49,6 @@ SPEC CHECKSUMS:
   NHFNavigationBar: fbfbefe38d16e92cd8bb05eb39b0b0e9d9ac2dfd
   NhfUIColorUnit: 7d3c00f9cbe84503bb99f52557958397a9f9e634
 
-PODFILE CHECKSUM: e2906892225cda20e2940a0b7ed0f73a5ccc6abe
+PODFILE CHECKSUM: 7d5a4192b8a36d5bb2246187d53746a12a679f1d
 
 COCOAPODS: 1.6.1

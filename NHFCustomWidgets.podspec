@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.4"
+    s.version      = "1.3.4.1"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
     s.dependency "NHFNavigationBar"
     s.dependency "IQKeyboardManager"
     s.dependency "MJRefresh"
+    s.dependency "AFNetworking"
 
     s.frameworks = 'QuartzCore','CoreData','Foundation','UIKit','Security'
 
@@ -92,5 +93,10 @@ Pod::Spec.new do |s|
         ss.dependency 'NHFCustomWidgets/NHFMacroDefinition'
         ss.source_files = 'Classes/Base/**/*.{h,m}'
         ss.public_header_files = 'Classes/Base/**/*.h'
+    end
+
+    s.subspec 'NHFUpLoadAndDownImages' do |ss|
+        ss.source_files = 'Classes/NHFUpLoadAndDownImages/*.{h,m}'
+        ss.public_header_files = 'Classes/NHFUpLoadAndDownImages/*.h'
     end
 end
