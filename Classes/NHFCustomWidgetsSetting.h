@@ -36,5 +36,6 @@
 #import "JsonDeal.h"
 #import "NHFUpLoadImages.h"
 #import "NHFDownImages.h"
+#import "UIButtonMS.h"
 
 #endif /* NHFCustomWidgetsSetting_h */
