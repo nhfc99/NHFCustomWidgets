@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.4.2"
+    s.version      = "1.3.4.3"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -113,11 +113,6 @@ Pod::Spec.new do |s|
     s.subspec 'JsonDeal' do |ss|
         ss.source_files = 'Classes/JsonDeal/*.{h,m}'
         ss.public_header_files = 'Classes/JsonDeal/*.h'
-    end
-
-    s.subspec 'NSObjectSafe' do |ss|
-        ss.source_files = 'Classes/NSObjectSafe/*.{h,m}'
-        ss.public_header_files = 'Classes/NSObjectSafe/*.h'
     end
 
     s.subspec 'NSString' do |ss|

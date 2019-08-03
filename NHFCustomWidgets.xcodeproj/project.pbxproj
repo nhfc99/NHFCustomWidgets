@@ -46,7 +46,6 @@
 		89EC875F22F5951A00DA9913 /* NSString+unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC875D22F5951A00DA9913 /* NSString+unit.m */; };
 		89EC876322F5956A00DA9913 /* UILabel+unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC876122F5956900DA9913 /* UILabel+unit.m */; };
 		89EC876722F5959F00DA9913 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC876522F5959F00DA9913 /* UIView+ViewController.m */; };
-		89EC876A22F5975A00DA9913 /* NSObjectSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC875A22F594E800DA9913 /* NSObjectSafe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,8 +119,6 @@
 		89EC875122F593CD00DA9913 /* UIButton+ZFBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZFBadge.h"; sourceTree = "<group>"; };
 		89EC875522F594B000DA9913 /* JsonDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDeal.h; sourceTree = "<group>"; };
 		89EC875622F594B000DA9913 /* JsonDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDeal.m; sourceTree = "<group>"; };
-		89EC875922F594E800DA9913 /* NSObjectSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectSafe.h; sourceTree = "<group>"; };
-		89EC875A22F594E800DA9913 /* NSObjectSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectSafe.m; sourceTree = "<group>"; };
 		89EC875D22F5951A00DA9913 /* NSString+unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+unit.m"; sourceTree = "<group>"; };
 		89EC875E22F5951A00DA9913 /* NSString+unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+unit.h"; sourceTree = "<group>"; };
 		89EC876122F5956900DA9913 /* UILabel+unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+unit.m"; sourceTree = "<group>"; };
@@ -250,7 +247,6 @@
 				89EC876422F5959F00DA9913 /* UIView */,
 				89EC876022F5956900DA9913 /* UILabel */,
 				89EC875C22F5951A00DA9913 /* NSString */,
-				89EC875822F594E800DA9913 /* NSObjectSafe */,
 				89EC875422F594B000DA9913 /* JsonDeal */,
 				89EC874D22F593CD00DA9913 /* ZFBadgeNumber */,
 				89EC874022F5931500DA9913 /* Button */,
@@ -459,15 +455,6 @@
 			path = JsonDeal;
 			sourceTree = "<group>";
 		};
-		89EC875822F594E800DA9913 /* NSObjectSafe */ = {
-			isa = PBXGroup;
-			children = (
-				89EC875922F594E800DA9913 /* NSObjectSafe.h */,
-				89EC875A22F594E800DA9913 /* NSObjectSafe.m */,
-			);
-			path = NSObjectSafe;
-			sourceTree = "<group>";
-		};
 		89EC875C22F5951A00DA9913 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,7 +625,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89EC876A22F5975A00DA9913 /* NSObjectSafe.m in Sources */,
 				89EC874322F5932200DA9913 /* UIButtonMS.m in Sources */,
 				89EC873622F5786A00DA9913 /* BaseTableViewCell.m in Sources */,
 				89BF0CC72272D067004B7A86 /* NHFCycleView.m in Sources */,
