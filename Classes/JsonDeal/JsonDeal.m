@@ -7,7 +7,6 @@
 //
 
 #import "JsonDeal.h"
-#import "SNDefines.h"
 
 @implementation JsonDeal
 

@@ -34,7 +34,6 @@
 #import "UILabel+unit.h"
 #import "NSString+unit.h"
 #import "JsonDeal.h"
-#import "UIButtonMS.h"
 #import "NHFUpLoadImages.h"
 #import "NHFDownImages.h"
 
