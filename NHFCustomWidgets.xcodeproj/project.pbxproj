@@ -27,6 +27,13 @@
 		897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 897EE7AB214F6CE9009003C7 /* NHFSearchView.m */; };
 		8980F74A21745A8000602720 /* UITableViewCell+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8980F74921745A8000602720 /* UITableViewCell+Custom.m */; };
 		89BF0CC72272D067004B7A86 /* NHFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BF0CC52272D067004B7A86 /* NHFCycleView.m */; };
+		89EC873222F5786A00DA9913 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC871F22F5786A00DA9913 /* BaseView.m */; };
+		89EC873322F5786A00DA9913 /* BaseWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872222F5786A00DA9913 /* BaseWKWebViewController.m */; };
+		89EC873422F5786A00DA9913 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872522F5786A00DA9913 /* BaseViewController.m */; };
+		89EC873522F5786A00DA9913 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872722F5786A00DA9913 /* BaseTableViewController.m */; };
+		89EC873622F5786A00DA9913 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872B22F5786A00DA9913 /* BaseTableViewCell.m */; };
+		89EC873722F5786A00DA9913 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC872E22F5786A00DA9913 /* BaseNavigationController.m */; };
+		89EC873822F5786B00DA9913 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873122F5786A00DA9913 /* BaseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +75,20 @@
 		89B655AA21E09C770079073E /* NHFMacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFMacroDefinition.h; sourceTree = "<group>"; };
 		89BF0CC52272D067004B7A86 /* NHFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFCycleView.m; sourceTree = "<group>"; };
 		89BF0CC62272D067004B7A86 /* NHFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFCycleView.h; sourceTree = "<group>"; };
+		89EC871E22F5786A00DA9913 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		89EC871F22F5786A00DA9913 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		89EC872122F5786A00DA9913 /* BaseWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWKWebViewController.h; sourceTree = "<group>"; };
+		89EC872222F5786A00DA9913 /* BaseWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWKWebViewController.m; sourceTree = "<group>"; };
+		89EC872422F5786A00DA9913 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		89EC872522F5786A00DA9913 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		89EC872722F5786A00DA9913 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		89EC872822F5786A00DA9913 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		89EC872A22F5786A00DA9913 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		89EC872B22F5786A00DA9913 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		89EC872D22F5786A00DA9913 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		89EC872E22F5786A00DA9913 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		89EC873022F5786A00DA9913 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		89EC873122F5786A00DA9913 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
 		A6CC9707AF637242A3EFD497 /* Pods-NHFCustomWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.release.xcconfig"; sourceTree = "<group>"; };
 		E098ACDD343B669D61E16754 /* Pods-NHFCustomWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +206,7 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89EC871C22F5786A00DA9913 /* Base */,
 				8933FBE922A606AF007825EF /* UITextField+Attribute */,
 				895468D12286D2C8002096AC /* NHFMemoryObjectCache */,
 				8941504D227E85B300003A8B /* NHFKeychainTool */,
@@ -265,6 +287,83 @@
 			path = NHFCycleView;
 			sourceTree = "<group>";
 		};
+		89EC871C22F5786A00DA9913 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89EC871D22F5786A00DA9913 /* BaseView */,
+				89EC872022F5786A00DA9913 /* BaseWKWebViewController */,
+				89EC872322F5786A00DA9913 /* BaseViewController */,
+				89EC872622F5786A00DA9913 /* BaseTableViewController */,
+				89EC872922F5786A00DA9913 /* BaseTableViewCell */,
+				89EC872C22F5786A00DA9913 /* BaseNavigationController */,
+				89EC872F22F5786A00DA9913 /* BaseObject */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89EC871D22F5786A00DA9913 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				89EC871E22F5786A00DA9913 /* BaseView.h */,
+				89EC871F22F5786A00DA9913 /* BaseView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		89EC872022F5786A00DA9913 /* BaseWKWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89EC872122F5786A00DA9913 /* BaseWKWebViewController.h */,
+				89EC872222F5786A00DA9913 /* BaseWKWebViewController.m */,
+			);
+			path = BaseWKWebViewController;
+			sourceTree = "<group>";
+		};
+		89EC872322F5786A00DA9913 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89EC872422F5786A00DA9913 /* BaseViewController.h */,
+				89EC872522F5786A00DA9913 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		89EC872622F5786A00DA9913 /* BaseTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89EC872722F5786A00DA9913 /* BaseTableViewController.m */,
+				89EC872822F5786A00DA9913 /* BaseTableViewController.h */,
+			);
+			path = BaseTableViewController;
+			sourceTree = "<group>";
+		};
+		89EC872922F5786A00DA9913 /* BaseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				89EC872A22F5786A00DA9913 /* BaseTableViewCell.h */,
+				89EC872B22F5786A00DA9913 /* BaseTableViewCell.m */,
+			);
+			path = BaseTableViewCell;
+			sourceTree = "<group>";
+		};
+		89EC872C22F5786A00DA9913 /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				89EC872D22F5786A00DA9913 /* BaseNavigationController.h */,
+				89EC872E22F5786A00DA9913 /* BaseNavigationController.m */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		89EC872F22F5786A00DA9913 /* BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				89EC873022F5786A00DA9913 /* BaseObject.h */,
+				89EC873122F5786A00DA9913 /* BaseObject.m */,
+			);
+			path = BaseObject;
+			sourceTree = "<group>";
+		};
 		A1788ADFBC1D24FE408A18FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +392,7 @@
 				8959267621490ED60088FD94 /* Sources */,
 				8959267721490ED60088FD94 /* Frameworks */,
 				8959267821490ED60088FD94 /* Resources */,
+				3C528CEBABBDD09929071623 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,6 +450,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C528CEBABBDD09929071623 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		440DD3AF4B2A202696773FC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,17 +499,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EC873622F5786A00DA9913 /* BaseTableViewCell.m in Sources */,
 				89BF0CC72272D067004B7A86 /* NHFCycleView.m in Sources */,
+				89EC873422F5786A00DA9913 /* BaseViewController.m in Sources */,
 				8933FBEC22A606AF007825EF /* UITextField+Attribute.m in Sources */,
 				897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */,
+				89EC873522F5786A00DA9913 /* BaseTableViewController.m in Sources */,
 				8959268221490ED60088FD94 /* ViewController.m in Sources */,
+				89EC873822F5786B00DA9913 /* BaseObject.m in Sources */,
 				8959268D21490ED80088FD94 /* main.m in Sources */,
+				89EC873722F5786A00DA9913 /* BaseNavigationController.m in Sources */,
 				892B28CB2160AB840074708A /* NHFWindowView.m in Sources */,
 				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
+				89EC873322F5786A00DA9913 /* BaseWKWebViewController.m in Sources */,
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
 				895468D42286D2F4002096AC /* NHFMemoryObjectCache.m in Sources */,
 				89415050227E85C400003A8B /* NHFKeychainTool.m in Sources */,
 				8921E6412272BE4500460D7C /* NHFTimer.m in Sources */,
+				89EC873222F5786A00DA9913 /* BaseView.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
 				897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */,
 				8980F74A21745A8000602720 /* UITableViewCell+Custom.m in Sources */,

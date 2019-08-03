@@ -1,16 +1,36 @@
 PODS:
+  - IQKeyboardManager (6.4.0)
   - Masonry (1.1.0)
+  - MJRefresh (3.2.0)
+  - NHFDevice (1.0.2)
+  - NHFNavigationBar (1.0.26)
+  - NhfUIColorUnit (1.0.2)
 
 DEPENDENCIES:
+  - IQKeyboardManager
   - Masonry
+  - MJRefresh
+  - NHFDevice
+  - NHFNavigationBar
+  - NhfUIColorUnit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
     - Masonry
+    - MJRefresh
+    - NHFDevice
+    - NHFNavigationBar
+    - NhfUIColorUnit
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  NHFDevice: fcbc2b88436cfdab052181b9b475351fd9d911df
+  NHFNavigationBar: fbfbefe38d16e92cd8bb05eb39b0b0e9d9ac2dfd
+  NhfUIColorUnit: 7d3c00f9cbe84503bb99f52557958397a9f9e634
 
-PODFILE CHECKSUM: 41eafea8b830a4efe667617ea310d9e4deb6f48e
+PODFILE CHECKSUM: e2906892225cda20e2940a0b7ed0f73a5ccc6abe
 
 COCOAPODS: 1.6.1

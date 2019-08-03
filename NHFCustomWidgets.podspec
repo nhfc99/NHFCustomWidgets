@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.2.9"
+    s.version      = "1.3"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -14,6 +14,11 @@ Pod::Spec.new do |s|
     s.source_files = 'Classes/NHFCustomWidgetsSetting.h'
 
     s.dependency "Masonry"
+    s.dependency "NHFDevice"
+    s.dependency "NhfUIColorUnit"
+    s.dependency "NHFNavigationBar"
+    s.dependency "IQKeyboardManager"
+    s.dependency "MJRefresh"
 
     s.frameworks = 'QuartzCore','CoreData','Foundation','UIKit','Security'
 
@@ -83,4 +88,9 @@ Pod::Spec.new do |s|
         ss.public_header_files = 'Classes/UITextField+Attribute/UITextField+Attribute.h'
     end
 
+    s.subspec 'Base' do |ss|
+        ss.dependency 'NHFCustomWidgets/NHFMacroDefinition'
+        ss.source_files = 'Classes/**/*.{h,m}'
+        ss.public_header_files = 'Classes/**/*.h'
+    end
 end
