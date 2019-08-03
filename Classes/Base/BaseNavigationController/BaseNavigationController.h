@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NHFNavigationController.h"
+#import <NHFNavigationBar/NHFNavigationController.h>
 
 @interface BaseNavigationController : NHFNavigationController
 
