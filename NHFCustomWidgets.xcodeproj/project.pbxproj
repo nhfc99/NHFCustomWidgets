@@ -36,6 +36,17 @@
 		89EC873822F5786B00DA9913 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873122F5786A00DA9913 /* BaseObject.m */; };
 		89EC873E22F58D3100DA9913 /* NHFUpLoadImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873C22F58D3100DA9913 /* NHFUpLoadImages.m */; };
 		89EC873F22F58D3100DA9913 /* NHFDownImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC873D22F58D3100DA9913 /* NHFDownImages.m */; };
+		89EC874322F5932200DA9913 /* UIButtonMS.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC874222F5932200DA9913 /* UIButtonMS.m */; };
+		89EC874622F5934600DA9913 /* UIButton+CenterImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC874422F5934500DA9913 /* UIButton+CenterImageAndTitle.m */; };
+		89EC874B22F593B300DA9913 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC874722F593B300DA9913 /* UIBarButtonItem+Badge.m */; };
+		89EC874C22F593B300DA9913 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC874822F593B300DA9913 /* UIButton+Badge.m */; };
+		89EC875222F593CD00DA9913 /* UIImageView+ZFBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC874E22F593CD00DA9913 /* UIImageView+ZFBadge.m */; };
+		89EC875322F593CD00DA9913 /* UIButton+ZFBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC874F22F593CD00DA9913 /* UIButton+ZFBadge.m */; };
+		89EC875722F594B000DA9913 /* JsonDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC875622F594B000DA9913 /* JsonDeal.m */; };
+		89EC875F22F5951A00DA9913 /* NSString+unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC875D22F5951A00DA9913 /* NSString+unit.m */; };
+		89EC876322F5956A00DA9913 /* UILabel+unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC876122F5956900DA9913 /* UILabel+unit.m */; };
+		89EC876722F5959F00DA9913 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC876522F5959F00DA9913 /* UIView+ViewController.m */; };
+		89EC876A22F5975A00DA9913 /* NSObjectSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC875A22F594E800DA9913 /* NSObjectSafe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +106,29 @@
 		89EC873B22F58D3100DA9913 /* NHFDownImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHFDownImages.h; sourceTree = "<group>"; };
 		89EC873C22F58D3100DA9913 /* NHFUpLoadImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFUpLoadImages.m; sourceTree = "<group>"; };
 		89EC873D22F58D3100DA9913 /* NHFDownImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHFDownImages.m; sourceTree = "<group>"; };
+		89EC874122F5932200DA9913 /* UIButtonMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonMS.h; sourceTree = "<group>"; };
+		89EC874222F5932200DA9913 /* UIButtonMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonMS.m; sourceTree = "<group>"; };
+		89EC874422F5934500DA9913 /* UIButton+CenterImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CenterImageAndTitle.m"; sourceTree = "<group>"; };
+		89EC874522F5934500DA9913 /* UIButton+CenterImageAndTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CenterImageAndTitle.h"; sourceTree = "<group>"; };
+		89EC874722F593B300DA9913 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		89EC874822F593B300DA9913 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
+		89EC874922F593B300DA9913 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		89EC874A22F593B300DA9913 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		89EC874E22F593CD00DA9913 /* UIImageView+ZFBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZFBadge.m"; sourceTree = "<group>"; };
+		89EC874F22F593CD00DA9913 /* UIButton+ZFBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZFBadge.m"; sourceTree = "<group>"; };
+		89EC875022F593CD00DA9913 /* UIImageView+ZFBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZFBadge.h"; sourceTree = "<group>"; };
+		89EC875122F593CD00DA9913 /* UIButton+ZFBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZFBadge.h"; sourceTree = "<group>"; };
+		89EC875522F594B000DA9913 /* JsonDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDeal.h; sourceTree = "<group>"; };
+		89EC875622F594B000DA9913 /* JsonDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDeal.m; sourceTree = "<group>"; };
+		89EC875922F594E800DA9913 /* NSObjectSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectSafe.h; sourceTree = "<group>"; };
+		89EC875A22F594E800DA9913 /* NSObjectSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectSafe.m; sourceTree = "<group>"; };
+		89EC875D22F5951A00DA9913 /* NSString+unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+unit.m"; sourceTree = "<group>"; };
+		89EC875E22F5951A00DA9913 /* NSString+unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+unit.h"; sourceTree = "<group>"; };
+		89EC876122F5956900DA9913 /* UILabel+unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+unit.m"; sourceTree = "<group>"; };
+		89EC876222F5956900DA9913 /* UILabel+unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+unit.h"; sourceTree = "<group>"; };
+		89EC876522F5959F00DA9913 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		89EC876622F5959F00DA9913 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		89EC876922F595FA00DA9913 /* SNDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDefines.h; sourceTree = "<group>"; };
 		A6CC9707AF637242A3EFD497 /* Pods-NHFCustomWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.release.xcconfig"; sourceTree = "<group>"; };
 		E098ACDD343B669D61E16754 /* Pods-NHFCustomWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHFCustomWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHFCustomWidgets/Pods-NHFCustomWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +246,14 @@
 		8959269321490EDD0088FD94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89EC876822F595FA00DA9913 /* Other */,
+				89EC876422F5959F00DA9913 /* UIView */,
+				89EC876022F5956900DA9913 /* UILabel */,
+				89EC875C22F5951A00DA9913 /* NSString */,
+				89EC875822F594E800DA9913 /* NSObjectSafe */,
+				89EC875422F594B000DA9913 /* JsonDeal */,
+				89EC874D22F593CD00DA9913 /* ZFBadgeNumber */,
+				89EC874022F5931500DA9913 /* Button */,
 				89EC873922F58D3100DA9913 /* NHFUpLoadAndDownImages */,
 				89EC871C22F5786A00DA9913 /* Base */,
 				8933FBE922A606AF007825EF /* UITextField+Attribute */,
@@ -382,6 +424,85 @@
 			path = NHFUpLoadAndDownImages;
 			sourceTree = "<group>";
 		};
+		89EC874022F5931500DA9913 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				89EC874922F593B300DA9913 /* UIBarButtonItem+Badge.h */,
+				89EC874722F593B300DA9913 /* UIBarButtonItem+Badge.m */,
+				89EC874A22F593B300DA9913 /* UIButton+Badge.h */,
+				89EC874822F593B300DA9913 /* UIButton+Badge.m */,
+				89EC874522F5934500DA9913 /* UIButton+CenterImageAndTitle.h */,
+				89EC874422F5934500DA9913 /* UIButton+CenterImageAndTitle.m */,
+				89EC874122F5932200DA9913 /* UIButtonMS.h */,
+				89EC874222F5932200DA9913 /* UIButtonMS.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		89EC874D22F593CD00DA9913 /* ZFBadgeNumber */ = {
+			isa = PBXGroup;
+			children = (
+				89EC874E22F593CD00DA9913 /* UIImageView+ZFBadge.m */,
+				89EC874F22F593CD00DA9913 /* UIButton+ZFBadge.m */,
+				89EC875022F593CD00DA9913 /* UIImageView+ZFBadge.h */,
+				89EC875122F593CD00DA9913 /* UIButton+ZFBadge.h */,
+			);
+			path = ZFBadgeNumber;
+			sourceTree = "<group>";
+		};
+		89EC875422F594B000DA9913 /* JsonDeal */ = {
+			isa = PBXGroup;
+			children = (
+				89EC875522F594B000DA9913 /* JsonDeal.h */,
+				89EC875622F594B000DA9913 /* JsonDeal.m */,
+			);
+			path = JsonDeal;
+			sourceTree = "<group>";
+		};
+		89EC875822F594E800DA9913 /* NSObjectSafe */ = {
+			isa = PBXGroup;
+			children = (
+				89EC875922F594E800DA9913 /* NSObjectSafe.h */,
+				89EC875A22F594E800DA9913 /* NSObjectSafe.m */,
+			);
+			path = NSObjectSafe;
+			sourceTree = "<group>";
+		};
+		89EC875C22F5951A00DA9913 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				89EC875D22F5951A00DA9913 /* NSString+unit.m */,
+				89EC875E22F5951A00DA9913 /* NSString+unit.h */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		89EC876022F5956900DA9913 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				89EC876122F5956900DA9913 /* UILabel+unit.m */,
+				89EC876222F5956900DA9913 /* UILabel+unit.h */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		89EC876422F5959F00DA9913 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				89EC876522F5959F00DA9913 /* UIView+ViewController.m */,
+				89EC876622F5959F00DA9913 /* UIView+ViewController.h */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		89EC876822F595FA00DA9913 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				89EC876922F595FA00DA9913 /* SNDefines.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		A1788ADFBC1D24FE408A18FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,28 +638,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EC876A22F5975A00DA9913 /* NSObjectSafe.m in Sources */,
+				89EC874322F5932200DA9913 /* UIButtonMS.m in Sources */,
 				89EC873622F5786A00DA9913 /* BaseTableViewCell.m in Sources */,
 				89BF0CC72272D067004B7A86 /* NHFCycleView.m in Sources */,
 				89EC873422F5786A00DA9913 /* BaseViewController.m in Sources */,
 				8933FBEC22A606AF007825EF /* UITextField+Attribute.m in Sources */,
+				89EC875322F593CD00DA9913 /* UIButton+ZFBadge.m in Sources */,
 				897EE7AC214F6CE9009003C7 /* NHFSearchView.m in Sources */,
+				89EC876722F5959F00DA9913 /* UIView+ViewController.m in Sources */,
 				89EC873522F5786A00DA9913 /* BaseTableViewController.m in Sources */,
 				8959268221490ED60088FD94 /* ViewController.m in Sources */,
 				89EC873822F5786B00DA9913 /* BaseObject.m in Sources */,
+				89EC874622F5934600DA9913 /* UIButton+CenterImageAndTitle.m in Sources */,
 				8959268D21490ED80088FD94 /* main.m in Sources */,
 				89EC873722F5786A00DA9913 /* BaseNavigationController.m in Sources */,
 				892B28CB2160AB840074708A /* NHFWindowView.m in Sources */,
 				894D4599215DB46D00AF32C4 /* NHFSynService.m in Sources */,
+				89EC875722F594B000DA9913 /* JsonDeal.m in Sources */,
 				89EC873322F5786A00DA9913 /* BaseWKWebViewController.m in Sources */,
+				89EC874C22F593B300DA9913 /* UIButton+Badge.m in Sources */,
 				8959267F21490ED60088FD94 /* AppDelegate.m in Sources */,
 				895468D42286D2F4002096AC /* NHFMemoryObjectCache.m in Sources */,
+				89EC875222F593CD00DA9913 /* UIImageView+ZFBadge.m in Sources */,
 				89415050227E85C400003A8B /* NHFKeychainTool.m in Sources */,
 				8921E6412272BE4500460D7C /* NHFTimer.m in Sources */,
 				89EC873222F5786A00DA9913 /* BaseView.m in Sources */,
+				89EC875F22F5951A00DA9913 /* NSString+unit.m in Sources */,
+				89EC876322F5956A00DA9913 /* UILabel+unit.m in Sources */,
 				8959269821490F200088FD94 /* UIButton+NHFBlock.m in Sources */,
 				89EC873E22F58D3100DA9913 /* NHFUpLoadImages.m in Sources */,
 				89EC873F22F58D3100DA9913 /* NHFDownImages.m in Sources */,
 				897CD0CE21731D440026E0DC /* NHFImageTableViewCell.m in Sources */,
+				89EC874B22F593B300DA9913 /* UIBarButtonItem+Badge.m in Sources */,
 				8980F74A21745A8000602720 /* UITableViewCell+Custom.m in Sources */,
 				89569E692177332B00171F02 /* NHFELCycleVerticalView.m in Sources */,
 			);

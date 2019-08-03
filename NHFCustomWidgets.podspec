@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.4.1"
+    s.version      = "1.3.4.2"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -98,5 +98,45 @@ Pod::Spec.new do |s|
     s.subspec 'NHFUpLoadAndDownImages' do |ss|
         ss.source_files = 'Classes/NHFUpLoadAndDownImages/*.{h,m}'
         ss.public_header_files = 'Classes/NHFUpLoadAndDownImages/*.h'
+    end
+
+    s.subspec 'UIButton' do |ss|
+        ss.source_files = 'Classes/Button/*.{h,m}'
+        ss.public_header_files = 'Classes/Button/*.h'
+    end
+
+    s.subspec 'ZFBadgeNumber' do |ss|
+        ss.source_files = 'Classes/ZFBadgeNumber/*.{h,m}'
+        ss.public_header_files = 'Classes/ZFBadgeNumber/*.h'
+    end
+
+    s.subspec 'JsonDeal' do |ss|
+        ss.source_files = 'Classes/JsonDeal/*.{h,m}'
+        ss.public_header_files = 'Classes/JsonDeal/*.h'
+    end
+
+    s.subspec 'NSObjectSafe' do |ss|
+        ss.source_files = 'Classes/NSObjectSafe/*.{h,m}'
+        ss.public_header_files = 'Classes/NSObjectSafe/*.h'
+    end
+
+    s.subspec 'NSString' do |ss|
+        ss.source_files = 'Classes/NSString/*.{h,m}'
+        ss.public_header_files = 'Classes/NSString/*.h'
+    end
+
+    s.subspec 'UILabel' do |ss|
+        ss.source_files = 'Classes/UILabel/*.{h,m}'
+        ss.public_header_files = 'Classes/UILabel/*.h'
+    end
+
+    s.subspec 'UIView' do |ss|
+        ss.source_files = 'Classes/UIView/*.{h,m}'
+        ss.public_header_files = 'Classes/UIView/*.h'
+    end
+
+    s.subspec 'Other' do |ss|
+        ss.source_files = 'Classes/Other/*.{h,m}'
+        ss.public_header_files = 'Classes/Other/*.h'
     end
 end

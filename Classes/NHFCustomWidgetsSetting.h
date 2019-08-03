@@ -29,4 +29,13 @@
 #import "BaseNavigationController.h"
 #import "BaseObject.h"
 
+#import "SNDefines.h"
+#import "UIView+ViewController.h"
+#import "UILabel+unit.h"
+#import "NSString+unit.h"
+#import "JsonDeal.h"
+#import "UIButtonMS.h"
+#import "NHFUpLoadImages.h"
+#import "NHFDownImages.h"
+
 #endif /* NHFCustomWidgetsSetting_h */
