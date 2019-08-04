@@ -1,6 +1,6 @@
 //
 //  BaseViewController.m
-//  QFStudyWorkerTemplate
+//  QFEducation
 //
 //  Created by 可能科技 on 2018/7/4.
 //  Copyright © 2018年 网络科技. All rights reserved.
@@ -30,13 +30,14 @@
     
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.view.backgroundColor = [UIColor whiteColor];
+    self.initHidBar = false;
 }
 
 - (void)resetValues {
     //键盘控制
     self.keyboardEnable = true;
     //隐藏导航栏
-    self.hidBar = false;
+    self.hidBar = self.initHidBar;
     //TintColor
     self.tintColor = [UIColor blackColor];
     //TitleColor

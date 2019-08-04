@@ -1,6 +1,6 @@
 //
 //  BaseViewController.h
-//  QFStudyWorkerTemplate
+//  QFEducation
 //
 //  Created by 可能科技 on 2018/7/4.
 //  Copyright © 2018年 网络科技. All rights reserved.
@@ -14,6 +14,8 @@
 @property (nonatomic, assign) BOOL keyboardEnable;
 //隐藏导航栏
 @property (nonatomic, assign) BOOL hidBar;
+//初始化隐藏导航栏
+@property (nonatomic, assign) BOOL initHidBar;
 //TintColor
 @property (nonatomic, strong) UIColor *tintColor;
 //BarTintColor
@@ -124,7 +126,7 @@
 
 /**
  设置右边的按钮
-
+ 
  @param image --
  @param action --
  */
