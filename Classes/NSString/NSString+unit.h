@@ -12,14 +12,14 @@
 /**
  *  将汉字转成UTF8
  *
- *  @return
+ *  @return --
  */
 - (NSString*)hzToUTF8;
 
 /**
  *  检查手机号码
  *
- *  @return 
+ *  @return --
  */
 - (BOOL)checkPhoneNumInput;
 
@@ -29,79 +29,78 @@
 /**
  *  去掉文本两边的空格
  *
- *  @return 
+ *  @return --
  */
 - (NSString*)stringTrim;
 
 /**
  *  获取随机码
  *
- *  @param from
- *  @param to
+ *  @param from  --
+ *  @param to  --
  *
- *  @return 
+ *  @return --
  */
 + (NSString*)getRandomNumber:(NSInteger)from to:(NSInteger)to;
 
 /**
  *  整形判断
  *
- *  @param string
+ *  @param string --
  *
- *  @return
+ *  @return --
  */
 + (BOOL)isPureInt:(NSString *)string;
 
 /**
  *  浮点形判断
  *
- *  @param string
+ *  @param string --
  *
- *  @return
+ *  @return --
  */
 + (BOOL)isPureFloat:(NSString *)string;
 
 /**
  *  进行md5加密
  *
- *  @return 
+ *  @return --
  */
 - (NSString *)md5;
 
 /**
  *  将汉字转成拼音
  *
- *  @return
+ *  @return --
  */
 - (NSString *)pinYin;
 
 /**
  *  根据定位的信息处理距离信息
  *
- *  @param instance
+ *  @param instance --
  *
- *  @return
+ *  @return --
  */
 + (NSString *)locationInstance:(CGFloat)instance;
 
 /**
  *  转向UTF8编码
  *
- *  @param string
+ *  @param string --
  *
- *  @return 
+ *  @return --
  */
 + (NSString *)toUTF8:(NSString *)string;
 
 /**
  *  测试字符串是否是空的数据
  *
- *  @param string
+ *  @param string --
  *
- *  @return 
+ *  @return --
  */
 + (BOOL)isEmpty:(NSString *)string;
-
 
 /**
  去掉html标签
@@ -109,7 +108,6 @@
  @return --
  */
 - (NSString *)removeHTMLString;
-
 
 /**
  判断空
@@ -119,15 +117,13 @@
  */
 + (NSString *)isNullToString:(id)string;
 
-
 /**
  判断是否为空
 
- @param string
- @return 
+ @param string --
+ @return --
  */
 + (BOOL)isNullString:(id)string;
-
 
 /**
  青风头像处理
@@ -135,5 +131,18 @@
  @return --
  */
 - (NSString *)qfHeadPath;
+
++ (NSString *)jsonStringWithDictionary:(NSDictionary *)dictionary;
+
++ (NSString *)jsonStringWithArray:(NSArray *)array;
+
++ (NSString *)jsonStringWithString:(NSString *) string;
+
++ (NSString *)jsonStringWithObject:(id) object;
+
+@property (nonatomic, strong, readonly) NSString *jhTimeToDay;
+@property (nonatomic, strong, readonly) NSString *jhTimeToMin;
+
++ (NSString*)onlyText;
 
 @end
