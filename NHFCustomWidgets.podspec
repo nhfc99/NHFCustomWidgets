@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.4.7"
+    s.version      = "1.3.4.8"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -44,13 +44,11 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'NHFImageTableViewCell' do |ss|
-        ss.source_files = 'Classes/NHFImageTableViewCell/NHFImageTableViewCell.{h,m}'
-        ss.public_header_files = 'Classes/NHFImageTableViewCell/NHFImageTableViewCell.h'
-    end
-
-    s.subspec 'UITableViewCell+Custom' do |ss|
-        ss.source_files = 'Classes/UITableViewCell+Custom/UITableViewCell+Custom.{h,m}'
-        ss.public_header_files = 'Classes/UITableViewCell+Custom/UITableViewCell+Custom.h'
+        ss.source_files = 'Classes/NHFImageTableViewCell/*.{h,m}'
+        ss.public_header_files = 'Classes/NHFImageTableViewCell/*.h'
+        ss.resource_bundles = {
+            'NHFImageTableViewCell' => ['Classes/NHFImageTableViewCell/**/*.{png,xib}']
+        }
     end
 
     s.subspec 'NHFELCycleVerticalView' do |ss|
@@ -139,11 +137,6 @@ Pod::Spec.new do |s|
         ss.resource_bundles = {
             'UITableViewCells' => ['Classes/UITableViewCells/**/*.{png,xib}']
         }
-    end
-
-    s.subspec 'Tools' do |ss|
-        ss.source_files = 'Classes/Tools/*.{h,m}'
-        ss.public_header_files = 'Classes/Tools/*.h'
     end
 
     s.subspec 'Other' do |ss|
