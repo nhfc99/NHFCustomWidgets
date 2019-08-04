@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.4.6"
+    s.version      = "1.3.4.7"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -120,16 +120,30 @@ Pod::Spec.new do |s|
         ss.public_header_files = 'Classes/UILabel/*.h'
     end
 
-    s.subspec 'UIView' do |ss|
-        ss.subspec 'UIView+ViewController' do |sss|
-            sss.source_files = 'Classes/UIView/UIView+ViewController/*.{h,m}'
-            sss.public_header_files = 'Classes/UIView/UIView+ViewController/*.h'
-        end
+    s.subspec 'UIFont' do |ss|
+        ss.source_files = 'Classes/UIFont/*.{h,m}'
+        ss.public_header_files = 'Classes/UIFont/*.h'
+    end
 
-        ss.subspec 'KGStatusBar' do |sss|
-            sss.source_files = 'Classes/UIView/KGStatusBar/*.{h,m}'
-            sss.public_header_files = 'Classes/UIView/KGStatusBar/*.h'
-        end
+    s.subspec 'UIView' do |ss|
+        ss.source_files = 'Classes/UIView/**/*.{h,m}'
+        ss.public_header_files = 'Classes/UIView/**/*.h'
+        ss.resource_bundles = {
+            'UIViews' => ['Classes/UIView/**/*.{png,xib}']
+        }
+    end
+
+    s.subspec 'UITableViewCells' do |ss|
+        ss.source_files = 'Classes/UITableViewCells/**/*.{h,m}'
+        ss.public_header_files = 'Classes/UITableViewCells/**/*.h'
+        ss.resource_bundles = {
+            'UITableViewCells' => ['Classes/UITableViewCells/**/*.{png,xib}']
+        }
+    end
+
+    s.subspec 'Tools' do |ss|
+        ss.source_files = 'Classes/Tools/*.{h,m}'
+        ss.public_header_files = 'Classes/Tools/*.h'
     end
 
     s.subspec 'Other' do |ss|
