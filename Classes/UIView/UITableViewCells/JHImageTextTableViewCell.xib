@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -48,14 +47,13 @@
                     <constraint firstItem="sLi-bq-mXI" firstAttribute="leading" secondItem="8zT-sY-xMs" secondAttribute="trailing" constant="10" id="qct-LN-WWA"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="detailLabel" destination="UGf-ht-LCx" id="uPa-iO-hGm"/>
                 <outlet property="imageViewHeight" destination="UuV-uR-nKW" id="EHk-AE-z7l"/>
                 <outlet property="indexImageView" destination="8zT-sY-xMs" id="2SY-PM-y4c"/>
                 <outlet property="nameLabel" destination="sLi-bq-mXI" id="xZj-H7-nNM"/>
             </connections>
-            <point key="canvasLocation" x="-217" y="-11"/>
+            <point key="canvasLocation" x="-20" y="-52"/>
         </tableViewCell>
     </objects>
 </document>
