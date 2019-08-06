@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "NHFCustomWidgets"
-    s.version      = "1.3.4.12"
+    s.version      = "1.3.4.13"
     s.summary      = "常用组件集合"
     s.homepage     = "https://github.com/nhfc99/NHFCustomWidgets.git"
     s.license      = "MIT"
@@ -124,11 +124,8 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'UIView' do |ss|
-        ss.source_files = 'Classes/UIView/**/*.{h,m}'
+        ss.source_files = 'Classes/UIView/**/*.{h,m,xib}'
         ss.public_header_files = 'Classes/UIView/**/*.h'
-        ss.resource_bundles = {
-            'UIViews' => ['Classes/UIView/**/*.{png,xib}']
-        }
     end
 
     s.subspec 'Other' do |ss|
