@@ -124,8 +124,11 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'UIView' do |ss|
-        ss.source_files = 'Classes/UIView/**/*.{h,m,xib}'
+        ss.source_files = 'Classes/UIView/**/*.{h,m}'
         ss.public_header_files = 'Classes/UIView/**/*.h'
+        ss.resource_bundles = {
+            'UIViews' => ['Classes/UIView/**/*.{png,xib}']
+        }
     end
 
     s.subspec 'Other' do |ss|
