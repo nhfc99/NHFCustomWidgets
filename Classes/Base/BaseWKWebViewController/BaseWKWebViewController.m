@@ -27,6 +27,8 @@
     for (NSString *scriptMessage in _scriptMessages) {
         [[_webView configuration].userContentController addScriptMessageHandler:self name:scriptMessage];
     }
+    
+    [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -38,6 +40,8 @@
     for (NSString *scriptMessage in _scriptMessages) {
         [[_webView configuration].userContentController removeScriptMessageHandlerForName:scriptMessage];
     }
+    
+    [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
 }
 
 - (void)setWebUrlString:(NSString *)webUrlString {
@@ -76,7 +80,6 @@
         make.left.and.right.and.top.equalTo(self.webView);
         make.height.mas_equalTo(1.f);
     }];
-    [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)setProgressHid:(BOOL)progressHid {
