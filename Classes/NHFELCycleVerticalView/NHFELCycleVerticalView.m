@@ -197,8 +197,9 @@
             _tmpBtmView = _tmpAnimationView1;
         }
     }
-    [self setDataBy:_tmpMiddleView data:_dataSource[_indexNow%(_dataSource.count)]];
     if(_dataSource.count > 0){
+        [self setDataBy:_tmpMiddleView data:_dataSource[_indexNow%(_dataSource.count)]];
+        
         if (_direction == ELCycleVerticalViewScrollDirectionDown) {
             [self setDataBy:_tmpTopView data:_dataSource[(_indexNow+1)%(_dataSource.count)]];
         } else {
@@ -232,7 +233,7 @@
 }
 
 - (void)btnClick{
-    if (_clickELCycleVerticalViewBlock != nil) {
+    if (_clickELCycleVerticalViewBlock != nil && _dataSource.count > 0) {
         _clickELCycleVerticalViewBlock(self, _indexNow%(_dataSource.count));
     }
 }
